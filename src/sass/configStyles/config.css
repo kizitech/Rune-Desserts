@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-size: 0.8rem;
+  font-weight: 400;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}/*# sourceMappingURL=config.css.map */

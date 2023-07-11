@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// PRIMARY COLORS
+$white: #fff;
+$black: #000;
+$green: #1E9658;
+$dark: #1e1e1e99;
+$lightdark: #2d2d2d;
+
+$dms: 'DM Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+// PADDINGS
+$p-sm: 3%;
+$p-md: 7%;
+$p-lg: 30px;
+$p-xl: 40px;
+$p-2xl: 50px;
+
+// HEADINGS 
+$h1: 4rem;
+$h2: 3rem;
+$h3: calc(2rem + ((1vw - 0.8rem) * 0.5));
+$h4: calc(1.3rem + ((1vw - 0.8rem) * 0.75));;
+
+// BUTTONS AND LIs
+@mixin defaultValue {
+  border: none;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@mixin transition {
+  transition: all 500ms ease;
+}
+
+@mixin flex($text, $items, $justify, $direction) {
+  display: flex;
+  text-align: $text;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin button {
+  border: none;
+  outline: none;
+  color: $white;
+  font-weight: 600;
+  border-radius: 2px;
+  position: relative;
+  padding: 0.6em 2.2em;
+  background-color: $green;
+
+  @include transition;
+  @include flex(center, center, center, center);
+}
+
+
+
+body {
+  line-height: 1;
+  font-size: 0.8rem;
+  font-weight: 400;
+  min-height: 100vh;
+  font-family: $poppins;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: $lightdark;
+  text-decoration: none;
+}

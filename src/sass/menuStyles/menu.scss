@@ -1,0 +1,50 @@
+@import '/src/sass/configStyles/config';
+
+
+.menu {
+    padding: $p-sm;
+    background-color: $white;
+    @include flex(left, center, center, column);
+
+    .menu-title__heading {
+        color: $green;
+        font-size: $h3;
+        padding: 1em 0;
+        font-weight: 700;
+        font-family: $dms;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .food-cards {
+        width: 100%;
+        display: grid;
+        padding: $p-md 0;
+        grid-template-columns: 1fr;
+
+        .food-card__heading {
+            color: $black;
+            font-weight: 500;
+            text-align: left;
+            padding: 1em 0;
+            font-style: normal;
+            line-height: normal;
+            font-family: $poppins;
+            font-size: calc($h3 - 0.5rem);
+        }
+
+        .food-card {
+            @include flex(left, center, center, column);
+
+
+            &__image {
+                height: 25em;
+                object-fit: cover;
+            }
+
+            &__content {
+                display: grid;
+            }
+        }
+    }
+}

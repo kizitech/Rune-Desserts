@@ -1,0 +1,150 @@
+@import '/src/sass/configStyles/config';
+
+.header {
+    width: 100%;
+    background-color: $white;
+
+    &__section {
+        padding: $p-sm;
+        @include flex(center, center, space-between, row);
+
+        .header__logo-link {
+            @include flex(center, center, center, column);
+
+            &logo-image {
+                width: 10em;
+                height: 2.2em;
+            }
+
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__actions-list {
+            display: none;
+        }
+    }
+
+    .mobile-section {
+        @include transition;
+        @include flex(center, center, space-between, row);
+    }
+
+    .overlay {
+        inset: 0;
+        z-index: 100;
+        width: 100vw;
+        display: flex;
+        height: 100vh;
+        cursor: pointer;
+        position: fixed;
+        overflow: hidden;
+        background-color: #000000c3;
+    }
+
+    .overlay.remove {
+        display: none;
+    }
+
+    .open-icon {
+        width: 1.8em;
+        height: 1.4em;
+        user-select: none;
+        margin-left: 1.5em;
+    }
+
+    .menu-icon:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .mobile-header__nav {
+        @include transition;
+
+        top: 0;
+        left: 0;
+        width: 70%;
+        z-index: 999;
+        height: 100vh;
+        position: fixed;
+        background-color: $white;
+        text-transform: uppercase;
+        transform: translateX(-100%);
+
+        .menu-icon img {
+            margin: 7%;
+            width: 3.5em;
+            float: right;
+        }
+
+        .mobile-header__nav-list {
+            margin-top: 10em;
+
+            .mobile-header__nav-link {
+                @include transition;
+
+                display: block;
+                padding: 0.85em 2em;
+                font-size: calc(0.5rem + $h4);
+
+                &:hover {
+                    color: $green;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .mobile-header__nav.active {
+        transform: translateX(0);
+    }
+
+}
+
+@media (min-width: 50em) {
+    .mobile-section {
+        display: none !important;
+    }
+
+    .header__nav {
+        display: block !important;
+
+        .header__nav-list {
+            gap: 2.5em;
+
+            @include flex(center, center, center, row);
+        }
+
+        .header__nav-link {
+            font-size: $h4;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                color: $green;
+            }
+
+            &:active {
+                border-bottom: 3px solid $green;
+            }
+        }
+    }
+
+    .header__actions-list {
+        gap: 2em;
+        display: flex !important;
+
+        @include flex(center, center, space-between, row);
+
+        .header__actions-item {
+            font-size: $h4;
+        }
+    }
+}
+
+@media (min-width: 70em) {
+    .header__nav-list {
+        gap: 5em !important;
+    }
+}
