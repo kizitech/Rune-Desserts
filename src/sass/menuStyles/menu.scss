@@ -34,17 +34,75 @@
         }
 
         .food-card {
+            margin: 2em 0;
             @include flex(left, center, center, column);
 
 
             &__image {
-                height: 25em;
                 object-fit: cover;
             }
 
             &__content {
+                padding: 1em;
                 display: grid;
+                width: 100%;
+                // column-gap: 9em;
+
+                .food-card__title {
+                    color: $green;
+                    grid-area: 1/1;
+                    font-weight: 400;
+                    font-family: $dms;
+                    font-style: normal;
+                    line-height: normal;
+                    font-size: calc($h4 - 0.1rem);
+                }
+
+                .food-card__price {
+                    grid-area: 2/1;
+                    font-weight: 600;
+                    color: $lightdark;
+                    font-style: normal;
+                    line-height: normal;
+                    font-family: $poppins;
+                    font-size: calc($h3 - 0.5rem);
+                }
+
+                .food-card__button {
+                    @include button;
+                    width: 7.5rem;
+                    height: 3rem;
+                    padding: 1rem;
+                    grid-area: 1/2/3;
+                }
+
+                // @include flex(left, left, center, column);
             }
         }
+    }
+}
+
+@media (min-width: 40em) {
+    .food-card__container {
+        gap: 3em;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media (min-width: 70em) {
+    .food-card__container {
+        gap: 3em;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .food-card__title {
+        font-size: calc($h4 - 0.3rem);
+    }
+
+    .food-card__button {
+        width: 10.75rem;
+        height: 3.75rem;
     }
 }
