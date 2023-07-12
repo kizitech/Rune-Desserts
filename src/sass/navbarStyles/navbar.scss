@@ -85,6 +85,7 @@
             .mobile-header__nav-link {
                 @include transition;
 
+                color: $dark;
                 display: block;
                 padding: 0.85em 2em;
                 font-size: calc(0.5rem + $h4);
@@ -118,6 +119,7 @@
         }
 
         .header__nav-link {
+            color: $dark;
             font-size: $h4;
             padding: 0.5em;
 
@@ -137,8 +139,18 @@
 
         @include flex(center, center, space-between, row);
 
-        .header__actions-item {
+        .header__actions-link {
+            color: $dark;
             font-size: $h4;
+            padding: 0.5em;
+
+            &:hover {
+                color: $green;
+            }
+
+            &:active {
+                border-bottom: 3px solid $green;
+            }
         }
     }
 }

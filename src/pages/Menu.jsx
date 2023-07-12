@@ -78,6 +78,14 @@ function Menu() {
             })}
           </div>
         </section>
+
+        <div className="menu-cta">
+          <button className="menu-cta__btn">
+            <p className="menu-cta__word">Delivery</p>
+            <p className="menu-image"><img src="src/assets/icons/phone.png" alt="phone icon" /></p>
+            <p className="menu-cta__word">+234 8 234 9090</p>
+          </button>
+        </div>
       </div>
     </>
   );

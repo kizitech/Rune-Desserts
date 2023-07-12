@@ -1,0 +1,107 @@
+@import '/src/sass/configStyles/config';
+
+.footer {
+    padding: $p-lg $p-md $p-sm;
+    background-color: $white;
+    @include flex(left, center, center, column);
+
+    .footer-wrapper {
+        gap: 3em;
+        display: grid;
+        place-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+
+        .footer__menu,
+        .footer__about,
+        .footer__social,
+        .footer__contact {
+            gap: 1.5em;
+            @include flex(left, flex-start, center, column);
+
+            .footer__title {
+                color: $dark;
+                font-weight: 700;
+                font-family: $dms;
+                font-style: normal;
+                line-height: normal;
+                font-size: calc($h4 + 0.225rem);
+            }
+
+            .footer__list {
+                gap: 1em;
+                @include flex(left, flex-start, center, column);
+
+                .footer__link,
+                p {
+                    font-size: $h4;
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-family: $dms;
+                    color: $lightdark;
+                    font-style: normal;
+                    line-height: normal;
+
+                    &:hover {
+                        color: $green;
+                        font-weight: 500;
+                    }
+
+                    svg {
+                        height: 1.5em;
+                        @include transition;
+
+                        path:hover {
+                            fill: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__social {
+
+        .footer__list {
+            flex-direction: row !important;
+        }
+    }
+
+    .footer__contact {
+
+        .footer__item {
+            gap: 1em;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                height: 1.5em;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 50em) {
+    .footer-wrapper {
+        gap: 0em;
+        grid-template-columns: repeat(4, 1fr) !important;
+
+        .footer__link,
+        p {
+            font-size: calc($h4 - 0.25rem);
+        }
+    }
+}
+
+@media (min-width: 70em) {
+    .footer-wrapper {
+        gap: 0em;
+        // grid-template-columns: repeat(4, 15em) !important;
+
+        .footer__link,
+            p {
+                font-size: calc($h4 - 0.35rem);
+            }
+    }
+}

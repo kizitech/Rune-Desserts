@@ -1,0 +1,32 @@
+@import '/src/sass/configStyles/config';
+
+.about {
+    padding: $p-sm 0;
+    background-color: $white;
+    @include flex(left, center, center, column);
+
+    .about-text__content {
+        gap: 2em;
+        padding: $p-lg;
+        background-color: $green;
+        @include flex(center, center, center, column);
+
+        &-title {
+            color: $white;
+            font-size: $h2;
+            font-weight: 700;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        &-description {
+            color: $white;
+            font-weight: 500;
+            line-height: 1.5;
+            font-family: $dms;
+            font-style: normal;
+            font-size: calc($h4 + 0.1rem);
+        }
+    }
+}

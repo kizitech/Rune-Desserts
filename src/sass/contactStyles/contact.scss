@@ -1,0 +1,7 @@
+@import '/src/sass/configStyles/config';
+
+.contact {
+    padding: 0;
+    background-color: $white;
+    @include flex(left, center, center, column);
+}

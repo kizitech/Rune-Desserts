@@ -13,9 +13,9 @@
 // PRIMARY COLORS
 $white: #fff;
 $black: #000;
+$dark: #2d2d2d;
 $green: #1E9658;
-$dark: #1e1e1e99;
-$lightdark: #2d2d2d;
+$lightdark: #1e1e1e99;
 
 $dms: 'DM Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
@@ -23,15 +23,15 @@ $poppins: 'Poppins', sans-serif;
 // PADDINGS
 $p-sm: 3%;
 $p-md: 7%;
-$p-lg: 30px;
+$p-lg: 10%;
 $p-xl: 40px;
 $p-2xl: 50px;
 
 // HEADINGS 
 $h1: 4rem;
-$h2: 3rem;
+$h2: calc(3rem + ((1vw - 0.8rem) * 1.5));
 $h3: calc(2rem + ((1vw - 0.8rem) * 0.5));
-$h4: calc(1.3rem + ((1vw - 0.8rem) * 0.75));;
+$h4: calc(1rem + ((1vw - 0.8rem) * 0.5));;
 
 // BUTTONS AND LIs
 @mixin defaultValue {

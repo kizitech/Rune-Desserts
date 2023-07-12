@@ -35,7 +35,6 @@ function NavBar() {
                 </div>
 
                 <div className="mobile-section">
-                    {/* ADD OVERLAY JS */}
                     <div className={click ? "overlay" : { handleClick }} onClick={handleClick}></div>
                     <div className="mobile-header__cart menu-icon">
                         <img src="src/assets/icons/cart.png" alt="add to cart" className="mobile-header__cart-image" />
@@ -50,11 +49,11 @@ function NavBar() {
                             <img src="src/assets/icons/close-menu.svg" onClick={handleClick} alt="close menu icon" />
                         </div>
                         <ul className="mobile-header__nav-list">
-                            <li className="mobile-header__nav-item"><Link to="/" className="mobile-header__nav-link">Home</Link></li>
-                            <li className="mobile-header__nav-item"><Link to="/about" className="mobile-header__nav-link">About</Link></li>
-                            <li className="mobile-header__nav-item"><Link to="/menu" className="mobile-header__nav-link">Menu</Link></li>
-                            <li className="mobile-header__nav-item"><Link to="/blog" className="mobile-header__nav-link">Blog</Link></li>
-                            <li className="mobile-header__nav-item"><Link to="/contact" className="mobile-header__nav-link">Contact</Link></li>
+                            <Link to="/" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Home</li></Link>
+                            <Link to="/about" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">About</li></Link>
+                            <Link to="/menu" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Menu</li></Link>
+                            <Link to="/blog" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Blog</li></Link>
+                            <Link to="/contact" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Contact</li></Link>
                         </ul>
                     </nav>
                 </div>
