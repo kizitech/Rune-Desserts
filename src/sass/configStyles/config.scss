@@ -28,10 +28,10 @@ $p-xl: 40px;
 $p-2xl: 50px;
 
 // HEADINGS 
-$h1: 4rem;
+$h1: calc(4rem + ((1vw - 1.0rem) * 1.5));
 $h2: calc(3rem + ((1vw - 0.8rem) * 1.5));
 $h3: calc(2rem + ((1vw - 0.8rem) * 0.5));
-$h4: calc(1rem + ((1vw - 0.8rem) * 0.5));;
+$h4: calc(1rem + ((1vw - 0.8rem) * 0.5));
 
 // BUTTONS AND LIs
 @mixin defaultValue {
