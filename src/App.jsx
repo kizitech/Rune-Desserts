@@ -1,6 +1,7 @@
 import React from 'react';
 import Blog from './pages/Blog';
 import Menu from './pages/Menu';
+import Cart from './pages/Cart';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       
       <Footer />

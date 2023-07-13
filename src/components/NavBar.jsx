@@ -29,7 +29,9 @@ function NavBar() {
                             <Link to="/contact" className="header__actions-link">Contact</Link>
                         </li>
                         <li className="header__cart">
-                            <img src="src/assets/icons/cart.png" alt="add to cart" className="header__cart-image" />
+                            <Link to="/cart">
+                                <img src="src/assets/icons/cart.png" alt="add to cart" className="header__cart-image" />
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +39,9 @@ function NavBar() {
                 <div className="mobile-section">
                     <div className={click ? "overlay" : { handleClick }} onClick={handleClick}></div>
                     <div className="mobile-header__cart menu-icon">
-                        <img src="src/assets/icons/cart.png" alt="add to cart" className="mobile-header__cart-image" />
+                        <Link to="/cart">
+                            <img src="src/assets/icons/cart.png" alt="add to cart" className="mobile-header__cart-image" />
+                        </Link>
                     </div>
 
                     <div className="menu-icon">
