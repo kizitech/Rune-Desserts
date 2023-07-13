@@ -94,8 +94,7 @@ function Home() {
               </div>
             </section>
 
-            <section className="opening-hours">
-              <div className="opening-hours__image"></div>
+            <section className="opening-hours image">
               <h1 className="opening-hours__title">Opening Hours</h1>
               <div className="opening-hours__details">
                 <span className="opening-hours__day">

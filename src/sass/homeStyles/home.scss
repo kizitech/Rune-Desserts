@@ -153,5 +153,56 @@
                 }
             }
         }
+
+        .opening-hours {
+            gap: 3em;
+            width: 100%;
+            margin: $p-xl 0 0;
+            padding: $p-xl;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('src/assets/images/home/Rectangle 16.png');
+
+            @include flex(center, center, center, column);
+
+            &__title {
+                color: $white;
+                font-weight: 500;
+                font-family: $dms;
+                font-style: normal;
+                line-height: normal;
+                font-size: calc($h1 - 0.5rem);
+            }
+
+            &__details {
+                gap: 3em;
+                @include flex(center, center, center, column);
+            }
+
+            &__day {
+                gap: 0.5em;
+                @include flex(center, center, center, column);
+            }
+
+            &__day h4 {
+                color: $white;
+                font-weight: 500;
+                font-family: $dms;
+                font-style: normal;
+                line-height: normal;
+                font-size: calc($h3 - 0.5rem);
+            }
+
+            &__day p {
+                color: $white;
+                font-size: $h4;
+                font-weight: 500;
+                font-family: $dms;
+                font-style: normal;
+                line-height: normal;
+            }
+
+        }
     }
 }
