@@ -22,9 +22,9 @@ function Home() {
 
           <div className="hero-detail">
             <section className="products">
-              <div className="product-cards">
+              <div className="product-cards ourProduct">
                 <h2 className="product-card__heading">Our Products</h2>
-                <div className="product-card__container">
+                <div className="product-card__container1">
                   {ourProduct.map((card, i) => {
                     return (
                       <div key={i} className="product-card">
@@ -42,9 +42,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="product-cards">
-                <h2 className="product-card__heading">Our Products</h2>
-                <div className="product-card__container">
+              <div className="product-cards specialDessert">
+                <h2 className="product-card__heading">Special Dessert</h2>
+                <div className="product-card__container2">
                   {specialDessert.map((card, i) => {
                     return (
                       <div key={i} className="product-card">
@@ -62,9 +62,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="product-cards">
-                <h2 className="product-card__heading">Our Products</h2>
-                <div className="product-card__container">
+              <div className="product-cards popularCategories">
+                <h2 className="product-card__heading">Popular Categories</h2>
+                <div className="product-card__container3">
                   {popularCategories.map((card, i) => {
                     return (
                       <div key={i} className="product-card">
