@@ -1,0 +1,7 @@
+@import '/src/sass/configStyles/config';
+
+.blog {
+    padding: $p-sm 0;
+    background-color: $white;
+    @include flex(left, center, center, column);
+}
