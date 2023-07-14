@@ -3,5 +3,228 @@
 .blog {
     padding: $p-sm 0;
     background-color: $white;
-    @include flex(left, center, center, column);
+    @include flex(center, center, center, column);
+
+    .blog__image {
+        width: 100%;
+        padding: $p-xl $p-lg;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('src/assets/images/blog/Rectangle 23 (1).png');
+
+        .blog__top-tips {
+            @include flex (unset, center, center, column);
+
+            &-content {
+                gap: 1.5rem;
+                padding: $p-lg;
+                background-color: $white;
+                @include flex(unset, center, center, column);
+
+                &-details {
+                    gap: 1em;
+                    @include flex(unset, center, center, column);
+
+                    &-heading {
+                        color: $black;
+                        font-weight: 600;
+                        font-family: $dms;
+                        font-style: normal;
+                        line-height: normal;
+                        font-size: calc($h3 - 0.5rem);
+                    }
+
+                    &-description {
+                        font-size: $h4;
+                        font-weight: 400;
+                        font-family: $dms;
+                        color: $lightdark;
+                        font-style: normal;
+                        line-height: normal;
+                    }
+                }
+
+                &-author {
+                    width: 100%;
+                    @include flex(unset, center, space-between, row);
+
+                    &-image img {
+                        width: 3.75em;
+                        height: 3.75em;
+                    }
+
+                    &-info {
+                        gap: 0.2em;
+                        @include flex(unset, center, center, column);
+
+                        &-name {
+                            color: $black;
+                            font-weight: 700;
+                            font-family: $dms;
+                            font-style: normal;
+                            line-height: normal;
+                            font-size: calc($h4 + 0.145rem);
+                        }
+
+                        &-date {
+                            color: $black;
+                            font-size: $h4;
+                            font-weight: 400;
+                            font-family: $dms;
+                            font-style: normal;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                &-buttons {
+                    gap: 0.5em;
+                    @include flex(unset, center, space-between, row);
+
+                    &-like,
+                    &-save {
+                        border: none;
+                        width: 3.1em;
+                        height: 3.1em;
+                        cursor: pointer;
+                        background: none;
+                        background-repeat: no-repeat;
+                        background-image: url('src/assets/icons/ellipse.svg');
+
+                        @include flex(unset, center, center, unset);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .blog__newsletter {
+        width: 90%;
+        margin: $p-md $p-sm;
+        background-color: $green;
+
+        &-content {
+            width: 94%;
+            padding: $p-sm;
+            background-color: $green;
+            @include flex(unset, center, space-between, row);
+
+            &-title {
+                color: $white;
+                font-weight: 500;
+                font-family: $dms;
+                font-style: normal;
+                line-height: normal;
+                font-size: calc($h3 - 0.7rem);
+            }
+
+            &-subcribe {
+                @include flex(unset, center, space-between, row);
+
+                input {
+                    border: none;
+                    color: $dark;
+                    outline: none;
+                    padding: $p-sm;
+
+                    &::placeholder {
+                        color: $green;
+                        font-weight: 500;
+                        font-family: $dms;
+                        font-style: normal;
+                        line-height: normal;
+                    }
+                }
+
+                button {
+                    border: none;
+                    color: $white;
+                    font-size: $h4;
+                    background-color: $dark;
+                    padding: calc($p-sm + 0.245em);
+                }
+            }
+
+        }
+    }
+
+    .blog__posts-container {
+        gap: 3em;
+        display: grid;
+        place-items: center;
+
+        .blog__posts {
+            padding: $p-md;
+            @include flex(unset, center, center, column);
+        }
+
+        .blog__post {
+            width: 100%;
+            @include flex(unset, center, center, column);
+        }
+    }
+
+
+    .blog__post-details {
+        padding: 1em 0;
+        @include flex(unset, center, center, column);
+
+        &-date {
+            color: $black;
+            font-size: $h4;
+            font-weight: 500;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        &-title {
+            color: $black;
+            font-weight: 700;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+            font-size: calc($h3 - 0.5rem);
+        }
+
+        &-description {
+            width: 80%;
+            color: $black;
+            font-weight: 500;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+            font-size: calc($h4 + 0.125rem);
+        }
+
+        &-read-more {
+            width: 100%;
+            margin: $p-sm 0;
+            @include flex(unset, center, center, row);
+
+            button {
+                @include button;
+                @include flex(unset, center, center, row);
+
+                gap: 1em;
+                font-weight: 500;
+                padding: 0.7em $p-sm;
+                text-transform: capitalize;
+
+                &:hover img {
+                    @include transition;
+                    padding-left: 1.7em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 40em) {
+    .blog__posts-container {
+        padding: $p-md;
+        grid-template-columns: 1fr 1fr;
+    }
 }

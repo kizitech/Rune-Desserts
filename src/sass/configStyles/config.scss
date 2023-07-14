@@ -62,8 +62,11 @@ $h4: calc(1rem + ((1vw - 0.8rem) * 0.5));
   color: $white;
   cursor: pointer;
   font-weight: 600;
+  font-family: $dms;
+  font-style: normal;
   border-radius: 2px;
   position: relative;
+  line-height: normal;
   padding: 1.2em 2.2em;
   background-color: $green;
 

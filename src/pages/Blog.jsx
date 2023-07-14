@@ -6,27 +6,29 @@ function Blogs() {
   return (
     <>
       <div className="blog">
-        <section className="blog__top-tips">
-          <div className="blog__top-tips-content">
-            <div className="blog__top-tips-content-details">
-              <h3 className="blog__top-tips-content-details-heading">Top tips on how to prepare Coconut Candy</h3>
-              <p className="blog__top-tips-content-details-description">Coconut candy is very easy to prepare if you do not mind the process of grating the coconut</p>
-            </div>
-            <div className="blog__top-tips-content-author">
-              <div className="blog__top-tips-content-author-image">
-                <img src="src/assets/images/blog/Ellipse 1 (1).png" alt="author image" />
+        <section className="blog__image">
+          <div className='blog__top-tips'>
+            <div className="blog__top-tips-content">
+              <div className="blog__top-tips-content-details">
+                <h3 className="blog__top-tips-content-details-heading">Top tips on how to prepare Coconut Candy</h3>
+                <p className="blog__top-tips-content-details-description">Coconut candy is very easy to prepare if you do not mind the process of grating the coconut</p>
               </div>
-              <div className="blog__top-tips-content-author-info">
-                <h4 className="blog__top-tips-content-author-info-name">Louisa Moje</h4>
-                <p className="blog__top-tips-content-author-info-date">Sept 17, 2022</p>
-              </div>
-              <div className="blog__top-tips-content-buttons">
-                <button className="blog__top-tips-content-buttons-like">
-                  <img src="src/assets/icons/heart.svg" alt="like button" />
-                </button>
-                <button className="blog__top-tips-content-buttons-save">
-                  <img src="src/assets/icons/save.svg" alt="save button" />
-                </button>
+              <div className="blog__top-tips-content-author">
+                <div className="blog__top-tips-content-author-image">
+                  <img src="src/assets/images/blog/Ellipse 1 (1).png" alt="author image" />
+                </div>
+                <div className="blog__top-tips-content-author-info">
+                  <h4 className="blog__top-tips-content-author-info-name">Louisa Moje</h4>
+                  <p className="blog__top-tips-content-author-info-date">Sept 17, 2022</p>
+                </div>
+                <div className="blog__top-tips-content-buttons">
+                  <button className="blog__top-tips-content-buttons-like">
+                    <img src="src/assets/icons/heart.svg" alt="like button" />
+                  </button>
+                  <button className="blog__top-tips-content-buttons-save">
+                    <img src="src/assets/icons/save.svg" alt="save button" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -35,8 +37,10 @@ function Blogs() {
         <section className="blog__newsletter">
           <div className="blog__newsletter-content">
             <h4 className="blog__newsletter-content-title">Newsletter</h4>
-            <input type="email" name="email" id="email" placeholder='Email' />
-            <button type="submit" className="blog__newsletter-content-submit">Submit</button>
+            <div className='blog__newsletter-content-subcribe'>
+              <input type="email" name="email" id="email" placeholder='Email' />
+              <button type="submit">Submit</button>
+            </div>
           </div>
         </section>
 
@@ -52,7 +56,9 @@ function Blogs() {
                     <p className="blog__post-details-date">{card.date}</p>
                     <h2 className="blog__post-details-title">{card.title}</h2>
                     <p className="blog__post-details-description">{card.description}</p>
-                    <button className="blog__post-details-read-more">Read More</button>
+                    <div className="blog__post-details-read-more">
+                      <button><p>Read More</p><img src="src/assets/icons/left-arrow.svg" alt="Read more" /></button>
+                    </div>
                   </div>
                 </div>
               );
