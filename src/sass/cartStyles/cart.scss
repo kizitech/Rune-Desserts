@@ -1,0 +1,9 @@
+@import '/src/sass/configStyles/config';
+
+.cart {
+    width: 100%;
+    min-height: 500vh;
+    background-color: $green;
+    padding: $p-lg $p-md $p-sm;
+    @include flex(left, center, center, column);
+}

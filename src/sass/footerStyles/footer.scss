@@ -83,13 +83,17 @@
 
 
 @media (min-width: 50em) {
-    .footer-wrapper {
-        gap: 0em;
-        grid-template-columns: repeat(4, 1fr) !important;
+    .footer {
+        padding: $p-sm;
 
-        .footer__link,
-        p {
-            font-size: calc($h4 - 0.25rem);
+        .footer-wrapper {
+            gap: 0em;
+            grid-template-columns: repeat(4, 1fr) !important;
+
+            .footer__link,
+            p {
+                font-size: calc($h4 - 0.25rem);
+            }
         }
     }
 }
@@ -97,11 +101,10 @@
 @media (min-width: 70em) {
     .footer-wrapper {
         gap: 0em;
-        // grid-template-columns: repeat(4, 15em) !important;
 
         .footer__link,
-            p {
-                font-size: calc($h4 - 0.35rem);
-            }
+        p {
+            font-size: calc($h4 - 0.35rem);
+        }
     }
 }

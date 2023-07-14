@@ -142,6 +142,7 @@
                     border: none;
                     color: $white;
                     font-size: $h4;
+                    cursor: pointer;
                     background-color: $dark;
                     padding: calc($p-sm + 0.245em);
                 }
@@ -182,6 +183,7 @@
 
         &-title {
             color: $black;
+            padding: 0.3em 0r;
             font-weight: 700;
             font-family: $dms;
             font-style: normal;
@@ -223,8 +225,110 @@
 }
 
 @media (min-width: 40em) {
+    .blog__top-tips {
+        @include flex (unset, center, center, column);
+
+        &-content {
+            width: 38em;
+            padding: $p-md !important;
+        }
+    }
+
     .blog__posts-container {
         padding: $p-md;
         grid-template-columns: 1fr 1fr;
+
+        .blog__post:nth-child(3) {
+            grid-area: 1/2/3;
+        }
+    }
+
+    .blog__post-details-description {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 60em) {
+    .blog__top-tips {
+        @include flex (unset, center, center, column);
+
+        &-content {
+            width: 33em !important;
+            padding: 5% !important;
+        }
+    }
+
+    .blog__posts-container {
+        padding: 0 $p-sm;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .blog__post-details-description {
+        color: $lightdark;
+        font-size: calc($h4 - 0.15rem) !important;
+    }
+
+    .blog__newsletter {
+        margin: $p-sm 0 $p-lg !important;
+
+        .blog__newsletter-content {
+            padding: 2%;
+
+            &-subcribe {
+
+                input {
+                    padding: $p-md !important;
+
+                    &::placeholder {
+                        font-size: $h4;
+                    }
+                }
+
+                button {
+                    padding: calc($p-md + 0.3em) !important;
+                    font-size: calc($h4 - 0.18rem) !important;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 75em) {
+    .blog__top-tips {
+        align-items: flex-start !important;
+        
+        &-content {
+            width: 30em !important;
+            padding: $p-sm !important;
+        }
+    }
+
+    .blog__posts-container {
+
+        .blog__post:nth-child(3) {
+            grid-area: 1/3/3;
+            margin-top: -3em;
+        }
+
+        .blog__post-details {
+            align-items: flex-start;
+            text-align: left !important;
+
+            &-date {
+                font-size: calc($h4 - 0.3rem);
+            }
+
+            &-title {
+                padding: 0.5em 0;
+                font-size: calc($h3 - 0.8rem);
+            }
+
+            &-read-more {
+                justify-content: flex-start;
+            }
+        }
+
     }
 }
