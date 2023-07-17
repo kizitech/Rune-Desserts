@@ -1,0 +1,177 @@
+@import '/src/sass/configStyles/config';
+
+.delivery {
+    width: 100%;
+    background-color: $white;
+    padding: $p-lg $p-md $p-sm;
+    @include flex(left, center, center, column);
+
+    &__header-text {
+        color: $black;
+        font-weight: 500;
+        font-family: $dms;
+        font-style: normal;
+        line-height: normal;
+        font-size: calc($h2 - 0.4rem);
+    }
+
+    &__section {
+        gap: 2em;
+        margin: 2em 0 4em;
+        @include flex(left, center, center, column);
+    }
+
+    &__address {
+        width: 100%;
+        display: grid;
+        padding: 1.5em;
+        background: rgba(235, 235, 235, 0.42);
+
+        &-title,
+        &-details {
+            color: $black;
+            font-weight: 500;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+            font-size: calc($h3 - 0.6rem);
+        }
+
+        &-title,
+        &-details {
+            color: $black;
+            font-weight: 500;
+            font-family: $dms;
+            font-style: normal;
+            line-height: normal;
+            font-size: calc($h3 - 0.7rem);
+        }
+
+        &-details {
+            font-size: $h4;
+        }
+
+        &-radio {
+            grid-area: 1/2;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .checkBox {
+            display: block;
+            cursor: pointer;
+            width: 1em;
+            height: 1em;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            border: 3px solid $white;
+            box-shadow: 0px 0px 0px 2px $green;
+        }
+
+        .checkBox div {
+            width: 60px;
+            height: 60px;
+            top: -52px;
+            left: -52px;
+            position: absolute;
+            background-color: $green;
+            transform: rotateZ(45deg);
+            z-index: 100;
+        }
+
+        .checkBox input[type=checkbox]:checked+div {
+            left: -10px;
+            top: -10px;
+        }
+
+        .checkBox input[type=checkbox] {
+            position: absolute;
+            left: 50px;
+            visibility: hidden;
+        }
+
+        .transition {
+            transition: 300ms ease;
+        }
+    }
+
+    &__buttons {
+        gap: 1em;
+        @include flex(center, center, center, column);
+    }
+
+    &__button {
+        width: 100%;
+        @include button;
+        @include transition;
+        @include flex(center, center, center, column);
+
+        &:nth-child(1) {
+            color: $green;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid $green;
+            background-color: $white;
+
+            &:hover {
+                opacity: 1;
+                color: $white;
+                transform: scale(1.1);
+                outline: 2px solid $green;
+                box-shadow: 4px 5px 17px -4px $green;
+            }
+
+            &::before {
+                content: "";
+                top: 0;
+                width: 0;
+                z-index: -1;
+                left: -50px;
+                height: 100%;
+                position: absolute;
+                background-color: $green;
+                transform: skewX(45deg);
+                transition: width 1000ms;
+            }
+
+            &:hover::before {
+                width: 250%;
+            }
+        }
+
+        &:nth-child(2) {
+            color: $white;
+            overflow: hidden;
+            position: relative;
+            background-color: $green;
+
+            &:hover {
+                opacity: 1;
+                color: $white;
+                transform: scale(1.1);
+                outline: 2px solid $green;
+                box-shadow: 4px 5px 17px -4px $green;
+            }
+
+            &::before {
+                content: "";
+                top: 0;
+                width: 0;
+                z-index: -1;
+                left: -50px;
+                height: 100%;
+                position: absolute;
+                background-color: $green;
+                transform: skewX(45deg);
+                transition: width 1000ms;
+            }
+
+            &:hover::before {
+                width: 250%;
+            }
+        }
+    }
+}
