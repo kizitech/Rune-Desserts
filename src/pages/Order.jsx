@@ -19,7 +19,7 @@ function order() {
                                     <div className="food-card__content">
                                         <h2 className="food-card__title">{card1.title}</h2>
                                         <h3 className="food-card__price">{card1.price}</h3>
-                                        <Link to="/order" className="food-card__button"><button>View Product</button></Link>
+                                        <Link to="/cart" className="food-card__button"><button>Add to cart</button></Link>
                                     </div>
                                 </div>
                             );

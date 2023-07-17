@@ -24,3 +24,5 @@ const cartList = [
         price: 'N5, 100 per pack',
     },
 ]
+
+export default cartList

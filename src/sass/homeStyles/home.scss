@@ -152,6 +152,10 @@
                 &-btn {
                     @include button;
                     padding: 1em 3.5em;
+
+                    a {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -242,7 +246,7 @@
     }
 
     .opening-hours {
-        padding: $p-md !important;
+        padding: 16% $p-md !important;
     }
 }
 
@@ -266,7 +270,7 @@
     }
 
     .opening-hours {
-        padding: $p-md !important;
+        padding: 16% $p-md !important;
         margin: $p-lg 0 0 !important;
         background-size: contain !important;
         background-repeat: repeat !important;

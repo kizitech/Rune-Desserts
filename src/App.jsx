@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client'; 
+
 import Blog from './pages/Blog';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
@@ -6,7 +8,10 @@ import Home from './pages/Home';
 import Order from './pages/order';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ReactDOM from 'react-dom/client'; 
+import Delivery from './pages/Delivery';
+import PaymentMethod from './pages/PaymentMethod';
+import PaymentSuccessful from './pages/PaymentSuccessful';
+
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -26,6 +31,9 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/payment-method" element={<PaymentMethod />} />
+        <Route path="/payment-successful" element={<PaymentSuccessful />} />
       </Routes>
       
       <Footer />

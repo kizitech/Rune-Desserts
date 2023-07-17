@@ -2,8 +2,7 @@
 
 .cart {
     width: 100%;
-    min-height: 500vh;
-    background-color: $green;
+    background-color: $white;
     padding: $p-lg $p-md $p-sm;
     @include flex(left, center, center, column);
 }
