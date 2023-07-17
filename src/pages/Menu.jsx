@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { specialMenu, appetizers, veganDesserts } from '../components/items/menu'
 
 
@@ -24,7 +25,7 @@ function Menu() {
                 <div className="food-card__content">
                   <h2 className="food-card__title">{card1.title}</h2>
                   <h3 className="food-card__price">{card1.price}</h3>
-                  <button className="food-card__button">View Product</button>
+                  <Link to="/order" className="food-card__button"><button>View Product</button></Link>
                 </div>
               </div>
             );
@@ -47,7 +48,7 @@ function Menu() {
                   <div className="food-card__content">
                     <h2 className="food-card__title">{card2.title}</h2>
                     <h3 className="food-card__price">{card2.price}</h3>
-                    <button className="food-card__button">View Product</button>
+                    <Link to="/order" className="food-card__button"><button>View Product</button></Link>
                   </div>
                 </div>
               );
@@ -70,7 +71,7 @@ function Menu() {
                   <div className="food-card__content">
                     <h2 className="food-card__title">{card3.title}</h2>
                     <h3 className="food-card__price">{card3.price}</h3>
-                    <button className="food-card__button">View Product</button>
+                    <Link to="/order" className="food-card__button"><button>View Product</button></Link>
                   </div>
                 </div>
               );

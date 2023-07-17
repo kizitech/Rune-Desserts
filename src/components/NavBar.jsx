@@ -40,7 +40,7 @@ function NavBar() {
                     <div className={click ? "overlay" : { handleClick }} onClick={handleClick}></div>
                     <div className="mobile-header__cart menu-icon">
                         <Link to="/cart">
-                            <img src="src/assets/icons/cart.png" alt="add to cart" className="mobile-header__cart-image" />
+                            <img src="src/assets/icons/cart.svg" alt="add to cart" className="mobile-header__cart-image" />
                         </Link>
                     </div>
 

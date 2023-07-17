@@ -53,11 +53,11 @@
                 .food-card__title {
                     color: $green;
                     grid-area: 1/1;
+                    font-size: $h4;
                     font-weight: 400;
                     font-family: $dms;
                     font-style: normal;
                     line-height: normal;
-                    font-size: calc($h4 - 0.1rem);
                 }
 
                 .food-card__price {
