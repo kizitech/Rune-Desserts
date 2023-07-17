@@ -3,7 +3,7 @@
 .delivery {
     width: 100%;
     background-color: $white;
-    padding: $p-lg $p-md $p-sm;
+    padding: $p-md;
     @include flex(left, center, center, column);
 
     &__header-text {
@@ -17,7 +17,7 @@
 
     &__section {
         gap: 2em;
-        margin: 2em 0 4em;
+        margin: 4em 0;
         @include flex(left, center, center, column);
     }
 
@@ -30,17 +30,7 @@
         &-title,
         &-details {
             color: $black;
-            font-weight: 500;
-            font-family: $dms;
-            font-style: normal;
-            line-height: normal;
-            font-size: calc($h3 - 0.6rem);
-        }
-
-        &-title,
-        &-details {
-            color: $black;
-            font-weight: 500;
+            font-weight: 600;
             font-family: $dms;
             font-style: normal;
             line-height: normal;
@@ -48,11 +38,14 @@
         }
 
         &-details {
+            grid-area: 2;
             font-size: $h4;
+            font-weight: 500;
+            padding: 0.2em 0 0;
         }
 
         &-radio {
-            grid-area: 1/2;
+            grid-area: 1/10;
         }
 
         .clear {
@@ -174,4 +167,25 @@
             }
         }
     }
+}
+
+
+@media (min-width: 50em) {
+
+    .delivery__address {
+        width: 150%;
+
+        &-title {
+            font-size: calc($h3 - 0.9rem);
+        }
+
+        &-details {
+            font-size: calc($h4 - 0.2rem);
+        }
+    }
+
+    .delivery__button {
+            width: 150%;
+    }
+
 }
