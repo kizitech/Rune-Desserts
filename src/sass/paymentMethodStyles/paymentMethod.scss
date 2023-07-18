@@ -4,6 +4,8 @@
     gap: 2em;
     width: 100%;
     padding: $p-md;
+    margin: 0 auto;
+    max-width: 50em;
     background-color: $white;
     @include flex(center, center, center, column);
 
@@ -17,13 +19,12 @@
     }
 
     &__section {
-        gap: 2em;
+        gap: 10em;
         margin: 1em 0 0;
         @include flex(center, center, center, row);
     }
 
     &__option {
-        gap: 2em;
         margin: 1em 0 0;
         @include flex(center, center, center, column);
 
