@@ -1,0 +1,52 @@
+@import '/src/sass/configStyles/config';
+
+.payment-success {
+    gap: 2em;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50em;
+    overflow-x: hidden;
+    padding: $p-lg $p-md;
+    background-color: $white;
+    @include flex(center, center, center, column);
+
+
+    &__section {
+        gap: 4em 0;
+        @include flex(center, center, center, column);
+    }
+
+    &__image>img {
+        height: 12em;
+    }
+
+
+    &__details {
+        gap: 1em;
+        @include flex(center, center, center, column);
+    }
+
+    &__title {
+        color: $black;
+        font-weight: 700;
+        font-family: $dms;
+        font-style: normal;
+        line-height: normal;
+        font-size: calc($h2 - 0.3rem);
+    }
+
+    &__message>p {
+        color: $black;
+        font-weight: 400;
+        font-family: $dms;
+        font-style: normal;
+        line-height: normal;
+        font-size: calc($h4 + 0.1rem);
+    }
+
+    &__button {
+        width: 100%;
+        @include button;
+    }
+
+}

@@ -3,9 +3,10 @@
 .payment {
     gap: 2em;
     width: 100%;
-    padding: $p-md;
     margin: 0 auto;
     max-width: 50em;
+    overflow-x: hidden;
+    padding: $p-lg $p-md;
     background-color: $white;
     @include flex(center, center, center, column);
 
@@ -219,13 +220,12 @@
         width: 100%;
         border: none;
         outline: none;
-        font-size: $h4;
+        font-size: calc($h4 - 0.05rem);
         color: #848484;
         font-family: $dms;
         font-style: normal;
         font-weight: 500;
         line-height: 1.25rem;
-        letter-spacing: -0.065rem;
         padding: 1.5625rem 1.3125rem;
 
         &:focus {

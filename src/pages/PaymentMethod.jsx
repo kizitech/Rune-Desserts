@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function PaymentMethod() {
   return (
@@ -14,7 +15,7 @@ function PaymentMethod() {
           <span className="payment__option-name active">Credit/Debit card</span>
         </div>
       </section>
-      
+
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
@@ -103,12 +104,14 @@ function PaymentMethod() {
           <input type="number" name="expiryDate" placeholder="Expiry date (MM/YY)" className="payment__input" />
           <input type="number" name="CVV" placeholder="CVV" className="payment__input" />
         </section>
-        <button className="button" type="submit">
-          <span className="button__text">Confirm Payment</span>
-          <span className="button__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1E9658" d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
-          </span>
-        </button>
+        <Link to="/payment-successful" className="button">
+          <button className="button" type="submit">
+            <span className="button__text">Confirm Payment</span>
+            <span className="button__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1E9658" d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+            </span>
+          </button>
+        </Link>
       </form>
     </main>
 

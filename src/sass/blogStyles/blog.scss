@@ -224,6 +224,17 @@
     }
 }
 
+@media (max-width: 30em) {
+    .blog__newsletter {
+        @include flex (unset, center, center, column);
+
+        &-content {
+            gap: 1.5em;
+            flex-direction: column !important;
+        }
+    }
+}
+
 @media (min-width: 40em) {
     .blog__top-tips {
         @include flex (unset, center, center, column);
@@ -298,7 +309,7 @@
 @media (min-width: 75em) {
     .blog__top-tips {
         align-items: flex-start !important;
-        
+
         &-content {
             width: 30em !important;
             padding: $p-sm !important;

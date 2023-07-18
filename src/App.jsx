@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; 
+import { Routes, Route } from 'react-router-dom';
 
 import Blog from './pages/Blog';
 import Menu from './pages/Menu';
@@ -14,7 +15,6 @@ import PaymentSuccessful from './pages/PaymentSuccessful';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { Routes, Route } from 'react-router-dom';
 
 function App() {
 

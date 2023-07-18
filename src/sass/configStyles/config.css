@@ -17,8 +17,9 @@ button {
 
 body {
   line-height: 1;
-  font-size: 0.8rem;
+  margin: 0 auto;
   font-weight: 400;
+  font-size: 0.8rem;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }

@@ -25,7 +25,6 @@ $p-sm: 3%;
 $p-md: 7%;
 $p-lg: 10%;
 $p-xl: 15%;
-$p-2xl: 50px;
 
 // HEADINGS 
 $h1: calc(4rem + ((1vw - 1.0rem) * 1.5));
@@ -88,8 +87,9 @@ button {
 
 body {
   line-height: 1;
-  font-size: 0.8rem;
+  margin: 0 auto;
   font-weight: 400;
+  font-size: 0.8rem;
   min-height: 100vh;
   font-family: $poppins;
 }
