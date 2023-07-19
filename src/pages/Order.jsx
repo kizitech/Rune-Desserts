@@ -9,16 +9,16 @@ function order() {
             <div className="menu">
                 <section className="food-cards">
                     <div className='food-card__container'>
-                        {Order.map((card1, i) => {
+                        {Order.map((card, i) => {
                             return (
                                 <div key={i} className="food-card">
                                     <div className="food-card__image-card">
-                                        <img className="food-card__image" src={card1.image} alt="Delicious Delicacy" />
+                                        <img className="food-card__image" src={card.image} alt="Delicious Delicacy" />
                                     </div>
 
                                     <div className="food-card__content">
-                                        <h2 className="food-card__title">{card1.title}</h2>
-                                        <h3 className="food-card__price">{card1.price}</h3>
+                                        <h2 className="food-card__title">{card.title}</h2>
+                                        <h3 className="food-card__price">{card.price}</h3>
                                         <Link to="/cart" className="food-card__button"><button>Add to cart</button></Link>
                                     </div>
                                 </div>
