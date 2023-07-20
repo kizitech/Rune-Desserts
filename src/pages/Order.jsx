@@ -18,11 +18,13 @@ function order() {
                             <h4 className="order__details-info-price">N3000 per pack</h4>
                         </div>
                         <div className="order__details-quantity">
-                            <p className="order__details-quantity-text">Packs</p>
                             <div className="order__details-quantity-controls">
-                                <img src="src/assets/icons/minus.svg" alt="Remove from cart" />
-                                <h4 className="order__details-quantity-value">02</h4>
-                                <img src="src/assets/icons/plus.svg" alt="Add to cart" />
+                                <p className="order__details-quantity-controls-text">Packs</p>
+                                <div className='order__details-quantity-controls-counter'>
+                                    <img src="src/assets/icons/plus.svg" alt="Add to cart" />
+                                    <h4 className="order__details-quantity-counter-value">02</h4>
+                                    <img src="src/assets/icons/minus.svg" alt="Remove from cart" />
+                                </div>
                             </div>
                             <div className="order__details-quantity-buttons">
                                 <button className="order__details-quantity-buttons-add">Add to cart</button>

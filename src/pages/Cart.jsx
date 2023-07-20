@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import cart from '../components/items/cart'
+import cartList from '../components/items/cart'
 import { useCart } from 'react-use-cart';
 function Cart() {
   const {

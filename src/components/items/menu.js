@@ -1,4 +1,4 @@
-const products = [
+const specialDesserts = [
 
 
     {
@@ -13,35 +13,35 @@ const products = [
 
         id: 2,
         image: 'src/assets/images/menu/image 5 (2).png',
-        title: 'Nakia (Rice cake)',
+        title: 'Bean/Plantain Waffles',
         price: 'N3, 000'
     },
 
     {
         id: 3,
         image: 'src/assets/images/menu/image 5.png',
-        title: 'Gulisua',
+        title: 'Donkwa',
         price: 'N4, 000',
     },
 
     {
         id: 4,
         image: 'src/assets/images/menu/image 6 (1).png',
-        title: 'Tuwon Madara',
+        title: 'Peanut Butter Cookies',
         price: 'N2, 000',
     },
 
     {
         id: 5,
         image: 'src/assets/images/menu/image 6 (2).png',
-        title: 'Rouge Dessert',
+        title: 'Banana/Almond Butter Cake',
         price: 'N4, 000',
     },
 
     {
         id: 6,
         image: 'src/assets/images/menu/image 6.png',
-        title: 'Shuku Shuku',
+        title: 'Nakia (Rice cake)',
         price: 'N3, 000',
     },
 
@@ -63,14 +63,14 @@ const appetizers = [
     {
         id: 2,
         image: 'src/assets/images/menu/Rectangle 6 (2).png',
-        title: 'Peanut Butter Cookies',
+        title: 'Plantain Chocolate Fudge Cake',
         price: 'N2, 000',
     },
 
     {
         id: 3,
         image: 'src/assets/images/menu/Rectangle 6.png',
-        title: ' Donkwa',
+        title: 'Gulisua',
         price: 'N1, 500',
     },
 
@@ -84,14 +84,14 @@ const appetizers = [
     {
         id: 5,
         image: 'src/assets/images/menu/Rectangle 7 (2).png',
-        title: 'Bean Cake (Akara)',
+        title: 'Coconut Cookies',
         price: 'N3, 200',
     },
 
     {
         id: 6,
         image: 'src/assets/images/menu/Rectangle 7.png',
-        title: 'Cookie Crisp',
+        title: 'Rouge Dessert',
         price: 'N2, 000',
     },
 
@@ -105,46 +105,46 @@ const veganDesserts = [
     {
         id: 1,
         image: 'src/assets/images/menu/Rectangle 8 (1).png',
-        title: 'Bean/Plantain Waffles',
+        title: 'Bean Cake (Akara)',
         price: 'N3, 500',
     },
 
     {
         id: 2,
         image: 'src/assets/images/menu/Rectangle 8 (2).png',
-        title: 'Banana/Almond Butter Cake',
+        title: 'Mango Cream Dessert',
         price: 'N1, 500',
     },
 
     {
         id: 3,
         image: 'src/assets/images/menu/Rectangle 8.png',
-        title: 'Plantain Chocolate Fudge Cake',
+        title: 'Rouge Dessert',
         price: 'N5, 000',
     },
 
     {
         id: 4,
         image: 'src/assets/images/menu/Rectangle 9 (1).png',
-        title: 'Coconut Cookies',
+        title: 'Cookie Crisp',
         price: 'N2, 000',
     },
 
     {
         id: 5,
         image: 'src/assets/images/menu/Rectangle 9 (2).png',
-        title: 'Mango Cream Dessert',
+        title: 'Masa',
         price: 'N4, 000',
     },
 
     {
         id: 6,
         image: 'src/assets/images/menu/Rectangle 9.png',
-        title: 'Masa',
+        title: 'Shaku Shaku',
         price: 'N3, 000',
     },
 ]
 
 
 
-export { products, appetizers, veganDesserts };
+export { specialDesserts, appetizers, veganDesserts };

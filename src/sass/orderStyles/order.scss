@@ -1,3 +1,117 @@
 .order {
-    background-color: $green;
+    width: 100%;
+    margin: 5em 0;
+    @include flex(center, center, center, column);
+
+    &__details {
+        gap: 2em;
+        margin: 2em 0;
+        padding: 0 2em;
+        max-width: 40em;
+        @include flex(unset, center, center, column);
+
+        &-info {
+            gap: 1.5em;
+            @include flex(unset, center, center, column);
+
+            &-name {
+                color: $dark;
+                font-size: $h2;
+                font-weight: 700;
+                font-family: $dms;
+                font-style: normal;
+                letter-spacing: 0.03rem;
+            }
+
+            &-description {
+                line-height: 1.2;
+                font-weight: 500;
+                color: $lightdark;
+                font-family: $dms;
+                font-style: normal;
+                letter-spacing: 0.015rem;
+                font-size: calc($h4 + 0.3rem);
+            }
+
+            &-price {
+                color: $dark;
+                font-family: $dms;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: 0.02rem;
+                font-size: calc($h3 - 0.4rem);
+            }
+        }
+
+        &-quantity {
+            gap: 1em;
+            @include flex(unset, center, center, column);
+
+            &-controls {
+
+                gap: 1em;
+                margin: 0 0 2em;
+                @include flex(unset, center, center, column);
+
+                &-text {
+                    font-size: $h4;
+                    font-weight: 400;
+                    color: $lightdark;
+                    font-family: $dms;
+                    font-style: normal;
+                    letter-spacing: 0.0125rem;
+                }
+
+                &-counter {
+                    gap: 1em;
+                    @include flex(unset, center, center, row);
+                }
+            }
+
+            &-buttons {
+                gap: 2em;
+                @include flex(unset, center, center, row);
+
+                &-add {
+                    @include button;
+
+                    color: $green;
+                    border: 2px solid $green;
+                    background-color: $white;
+                }
+
+                &-buy {
+                    @include button;
+                    padding: 1.3em 2.8em;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 50em) {
+    .order {
+        gap: $p-sm;
+        margin: 5em 0 10em;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 70em) {
+    .order__details-info {
+        text-align: left;
+        align-items: flex-start !important;
+    }
+
+    .order__details-quantity {
+        gap: 5em;
+        margin: 2em 0;
+        flex-direction: row;
+
+        &-controls {
+            align-items: flex-start;
+        }
+    }
 }
