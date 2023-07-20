@@ -24,8 +24,9 @@
         .contact__btn,
         .contact__input,
         .contact__textarea {
-            width: 100%;
+            width: 80%;
             border: none;
+            resize: none;
             outline: none;
             padding: $p-sm;
             color: #ebe7e7;
@@ -43,5 +44,14 @@
         .contact__btn {
             @include button
         }
+    }
+}
+
+@media (min-width: 40em) {
+
+    .contact__btn,
+    .contact__input,
+    .contact__textarea {
+        width: 100%;
     }
 }

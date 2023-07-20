@@ -6,7 +6,7 @@ import Blog from './pages/Blog';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
 import Home from './pages/Home';
-import Order from './pages/order';
+import Order from './pages/Order';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Delivery from './pages/Delivery';
