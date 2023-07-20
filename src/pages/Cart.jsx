@@ -1,11 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import cart from '../components/items/cart'
-
+import { useCart } from 'react-use-cart';
 function Cart() {
+  const {
+    isEmpty,
+    totalUniqueItems,
+    items,
+    updateItemQuantity,
+    removeItem,
+  } = useCart();
   return (
     <main className='cart'>
       <div>
+        {items.map((item,i)=>{
+          return(
+            <img key={i} src={item.image} alt="" />
+          )
+        })}
         <div>
           <h1>My Cart List</h1>
         </div>

@@ -70,9 +70,10 @@ $h4: calc(1rem + ((1vw - 0.8rem) * 0.5));
   background-color: $green;
 
   &:hover {
-    opacity: 0.9;
+    filter: brightness(0.9);
   }
 
+  @include transition;
   @include flex(center, center, center, center);
 }
 
@@ -92,6 +93,19 @@ body {
   font-size: 0.8rem;
   min-height: 100vh;
   font-family: $poppins;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: darkgrey;
 }
 
 img,

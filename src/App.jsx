@@ -12,9 +12,9 @@ import Contact from './pages/Contact';
 import Delivery from './pages/Delivery';
 import PaymentMethod from './pages/PaymentMethod';
 import PaymentSuccessful from './pages/PaymentSuccessful';
-
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import { CartProvider } from 'react-use-cart';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
     <>
 
       <NavBar />
-
+<CartProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -30,12 +30,12 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart />} />
+         <Route path="/cart" element={<Cart />} /> 
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/payment-method" element={<PaymentMethod />} />
         <Route path="/payment-successful" element={<PaymentSuccessful />} />
       </Routes>
-      
+      </CartProvider>
       <Footer />
 
     </>
