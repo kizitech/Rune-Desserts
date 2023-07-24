@@ -132,12 +132,13 @@
                 color: $green;
             }
         }
+    }
 
-        .header__nav-link.active {
-            color: $green;
-            font-weight: 600;
-            border-bottom: 2px solid $green;
-        }
+    .header__nav-link.active,
+    .header__actions-link.active {
+        color: $black;
+        font-weight: 600;
+        border-bottom: 2px solid $green;
     }
 
     .header__actions-list {

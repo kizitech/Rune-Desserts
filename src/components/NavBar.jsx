@@ -26,7 +26,7 @@ function NavBar() {
                 <div className="header__actions">
                     <ul className="header__actions-list">
                         <li className="header__actions-item">
-                            <Link to="/contact" className="header__actions-link">Contact</Link>
+                            <NavLink to="/contact" className="header__actions-link">Contact</NavLink>
                         </li>
                         <li className="header__cart">
                             <Link to="/cart">
