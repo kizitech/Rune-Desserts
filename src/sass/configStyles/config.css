@@ -60,4 +60,13 @@ ul {
 a {
   color: rgba(30, 30, 30, 0.6);
   text-decoration: none;
+}
+
+@media (min-width: 110em) {
+  body {
+    max-width: 110em;
+  }
+  html {
+    background: rgba(184, 184, 184, 0.3);
+  }
 }/*# sourceMappingURL=config.css.map */

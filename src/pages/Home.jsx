@@ -13,7 +13,7 @@ function Home() {
             <div className='hero__text-content'>
               <h1 className='hero__text-content-heading'>Indulge In The Delicacies Of African Desserts</h1>
               <p className='hero__text-content-description'>Sweeten Your Life With Our African Delicacies</p>
-              <Link to="/order" className='hero__text-content-btn'><button type="submit">Order Now</button></Link>
+              <Link to="/menu" className='hero__text-content-btn'><button type="submit">Order Now</button></Link>
             </div>
           </section>
           <section className='rune-info'>
@@ -88,7 +88,7 @@ function Home() {
               <div className="main-content__text">
                 <h2 className="main-content__text-title">Place an order and get your dessert delivered to your doorstep.</h2>
                 <p className="main-content__text-description">Get in touch with us today and experience dessert done right!</p>
-                <button className='main-content__text-btn' type="submit"><Link to="/order">Order Now</Link></button>              
+                <button className='main-content__text-btn' type="submit"><Link to="/menu">Order Now</Link></button>              
               </div>
               <div className="main-content__image">
                 <img src="src/assets/images/home/Rectangle 23.png" alt="A Lady enjoying herself" />

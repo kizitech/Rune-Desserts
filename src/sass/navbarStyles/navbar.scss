@@ -1,5 +1,6 @@
 @import '/src/sass/configStyles/config';
 
+
 .header {
     width: 100%;
     background-color: $white;
@@ -94,6 +95,11 @@
                     font-weight: 500;
                 }
             }
+
+            .mobile-header__nav-link.active {
+                color: $green;
+                font-weight: 700;
+            }
         }
     }
 
@@ -125,10 +131,12 @@
             &:hover {
                 color: $green;
             }
+        }
 
-            &:active {
-                border-bottom: 3px solid $green;
-            }
+        .header__nav-link.active {
+            color: $green;
+            font-weight: 600;
+            border-bottom: 2px solid $green;
         }
     }
 
@@ -145,10 +153,6 @@
 
             &:hover {
                 color: $green;
-            }
-
-            &:active {
-                border-bottom: 3px solid $green;
             }
         }
     }

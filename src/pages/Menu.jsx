@@ -7,6 +7,7 @@ import { specialDesserts, appetizers, veganDesserts } from '../components/items/
 function Menu() {
 
   const [searchTerm, setSearchTerm] = useState("");
+  console.log(searchTerm)
 
   const { addItem, items } = useCart();
   console.log(items)
@@ -34,7 +35,7 @@ function Menu() {
             {specialDesserts
 
               .filter((val) => {
-                if (searchTerm == "NOT AVALIABLE") {
+                if (searchTerm == " ") {
                   return val;
                 } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                   return val;
@@ -68,7 +69,7 @@ function Menu() {
             {appetizers
 
               .filter((val) => {
-                if (searchTerm == "NOT AVALIABLE") {
+                if (searchTerm == " ") {
                   return val;
                 } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                   return val;
@@ -101,7 +102,7 @@ function Menu() {
             {veganDesserts
 
               .filter((val) => {
-                if (searchTerm == "NOT AVALIABLE") {
+                if (searchTerm == " ") {
                   return val;
                 } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
                   return val;

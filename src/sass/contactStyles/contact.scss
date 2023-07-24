@@ -24,11 +24,12 @@
         .contact__btn,
         .contact__input,
         .contact__textarea {
-            width: 80%;
+            width: 100%;
             border: none;
             resize: none;
             outline: none;
             padding: $p-sm;
+            max-width: 40em;
             color: #ebe7e7;
             background: rgba(143, 143, 143, 0.42);
 
@@ -47,11 +48,11 @@
     }
 }
 
-@media (min-width: 40em) {
+@media (max-width: 30em) {
 
     .contact__btn,
     .contact__input,
     .contact__textarea {
-        width: 100%;
+        width: 80% !important;
     }
 }

@@ -1,14 +1,17 @@
 @import '/src/sass/configStyles/config';
 
 .payment {
-    gap: 2em;
     width: 100%;
     margin: 0 auto;
-    max-width: 50em;
     overflow-x: hidden;
     padding: $p-lg $p-md;
     background-color: $white;
     @include flex(center, center, center, column);
+
+    &>div {
+        gap: 2em;
+        @include flex(center, center, center, column);
+    }
 
     &__header-text {
         color: $black;

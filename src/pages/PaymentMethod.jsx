@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function PaymentMethod() {
   return (
     <main className="payment">
+      <div>
       <div className="payment__header">
         <h1 className="payment__header-text">Payment Method</h1>
       </div>
@@ -113,6 +114,7 @@ function PaymentMethod() {
           </button>
         </Link>
       </form>
+      </div>
     </main>
 
   )

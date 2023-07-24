@@ -132,3 +132,13 @@ a {
   color: $lightdark;
   text-decoration: none;
 }
+
+@media (min-width: 110em) {
+  body {
+    max-width: 110em;
+  }
+
+  html {
+    background: rgb(184 184 184 / 30%);
+  }
+}

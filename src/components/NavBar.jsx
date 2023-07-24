@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function NavBar() {
     const [click, setClick] = useState(false);
@@ -16,10 +16,10 @@ function NavBar() {
 
                 <nav className="header__nav">
                     <ul className="header__nav-list">
-                        <li className="header__nav-item"><Link to="/" className="header__nav-link">Home</Link></li>
-                        <li className="header__nav-item"><Link to="/about" className="header__nav-link">About</Link></li>
-                        <li className="header__nav-item"><Link to="/menu" className="header__nav-link">Menu</Link></li>
-                        <li className="header__nav-item"><Link to="/blog" className="header__nav-link">Blog</Link></li>
+                        <li className="header__nav-item"><NavLink to="/" className="header__nav-link">Home</NavLink></li>
+                        <li className="header__nav-item"><NavLink to="/about" className="header__nav-link">About</NavLink></li>
+                        <li className="header__nav-item"><NavLink to="/menu" className="header__nav-link">Menu</NavLink></li>
+                        <li className="header__nav-item"><NavLink to="/blog" className="header__nav-link">Blog</NavLink></li>
                     </ul>
                 </nav>
 
@@ -53,11 +53,11 @@ function NavBar() {
                             <img src="src/assets/icons/close-menu.svg" onClick={handleClick} alt="close menu icon" />
                         </div>
                         <ul className="mobile-header__nav-list">
-                            <Link to="/" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Home</li></Link>
-                            <Link to="/about" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">About</li></Link>
-                            <Link to="/menu" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Menu</li></Link>
-                            <Link to="/blog" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Blog</li></Link>
-                            <Link to="/contact" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Contact</li></Link>
+                            <NavLink to="/" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Home</li></NavLink>
+                            <NavLink to="/about" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">About</li></NavLink>
+                            <NavLink to="/menu" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Menu</li></NavLink>
+                            <NavLink to="/blog" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Blog</li></NavLink>
+                            <NavLink to="/contact" className={click ? "mobile-header__nav-link" : { handleClick }} onClick={handleClick}><li className="mobile-header__nav-item">Contact</li></NavLink>
                         </ul>
                     </nav>
                 </div>
