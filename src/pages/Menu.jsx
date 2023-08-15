@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { useCart } from "react-use-cart";
 import { specialDesserts, appetizers, veganDesserts } from '../components/items/menu'
 
 
@@ -9,8 +8,6 @@ function Menu() {
   const [searchTerm, setSearchTerm] = useState("");
   console.log(searchTerm)
 
-  const { addItem, items } = useCart();
-  console.log(items)
   return (
     <>
       <div className="menu">
@@ -52,8 +49,8 @@ function Menu() {
                     <div className="food-card__content">
                       <h2 className="food-card__title">{card1.title}</h2>
                       <h3 className="food-card__price">{card1.price}</h3>
-                      <Link to="/order" className="food-card__button"><button onClick={() => addItem(card1.id)}>View Product</button></Link>
-                      {/* <button onClick={() => addItem(card1)}>Add to cart</button> */}
+                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
+                      {/* <buttond to cart</button> */}
                     </div>
                   </div>
                 );
@@ -86,7 +83,7 @@ function Menu() {
                     <div className="food-card__content">
                       <h2 className="food-card__title">{card2.title}</h2>
                       <h3 className="food-card__price">{card2.price}</h3>
-                      <Link to="/order" className="food-card__button"><button onClick={() => addItem(card2.id)}>View Product</button></Link>
+                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
                     </div>
                   </div>
                 );
@@ -109,9 +106,9 @@ function Menu() {
                 }
               })
 
-              .map((card3, i) => {
+              .map((card3) => {
                 return (
-                  <div key={i} className="food-card">
+                  <div key={card3.id} className="food-card">
                     <div className="food-card__image">
                       <img src={card3.image} alt="Delicious Delicacy" />
                     </div>
@@ -119,7 +116,7 @@ function Menu() {
                     <div className="food-card__content">
                       <h2 className="food-card__title">{card3.title}</h2>
                       <h3 className="food-card__price">{card3.price}</h3>
-                      <Link to="/order" className="food-card__button"><button onClick={() => addItem(card3.id)}>View Product</button></Link>
+                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
                     </div>
                   </div>
                 );

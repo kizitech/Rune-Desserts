@@ -65,10 +65,14 @@
 
             &-rating {
                 right: 0;
-                gap: 1em;
+                gap: 0.5em;
                 top: 2.5em;
                 position: absolute;
                 @include flex(unset, center, center, row);
+
+                img {
+                    height: 1.5em;
+                }
             }
         }
     }
