@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { specialDesserts, appetizers, veganDesserts } from '../components/items/menu'
-
+import React, { useState, useContext } from "react";
+import { DataContext } from "src/components/DataProvider";
 
 function Menu() {
 
+  const value = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
-  console.log(searchTerm)
+
+  const [appetizers] = value.appetizers;
+  const [veganDesserts] = value.veganDesserts;
+  const [specialDesserts] = value.specialDesserts;
 
   return (
     <>
@@ -39,18 +42,17 @@ function Menu() {
                 }
               })
 
-              .map((card1) => {
+              .map((specialDessert) => {
                 return (
-                  <div key={card1.id} className="food-card">
-                    <div className="food-card__image-card">
-                      <img className="food-card__image" src={card1.image} alt="Delicious Delicacy" />
-                    </div>
+                  <div key={specialDessert.id} className="food-card">
+                    <Link to={`/special-dessert-order/${specialDessert._id}`} className="food-card__image-card" title='View Product'>
+                      <img className="food-card__image" src={specialDessert.image} alt={specialDessert.alt} />
+                    </Link>
 
                     <div className="food-card__content">
-                      <h2 className="food-card__title">{card1.title}</h2>
-                      <h3 className="food-card__price">{card1.price}</h3>
-                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
-                      {/* <buttond to cart</button> */}
+                      <h2 className="food-card__title">{specialDessert.title}</h2>
+                      <h3 className="food-card__price">N{specialDessert.price}</h3>
+                      <Link to={`/special-dessert-order/${specialDessert._id}`} className="food-card__button"><button>View Product</button></Link>
                     </div>
                   </div>
                 );
@@ -73,21 +75,22 @@ function Menu() {
                 }
               })
 
-              .map((card2) => {
+              .map((appetizer) => {
                 return (
-                  <div key={card2.id} className="food-card">
-                    <div className="food-card__image">
-                      <img src={card2.image} alt="Delicious Delicacy" />
-                    </div>
+                  <div key={appetizer.id} className="food-card">
+                    <Link to={`/appetizer-order/${appetizer._id}`} className="food-card__image" title="View Product">
+                      <img src={appetizer.image} alt="Delicious Delicacy" />
+                    </Link>
 
                     <div className="food-card__content">
-                      <h2 className="food-card__title">{card2.title}</h2>
-                      <h3 className="food-card__price">{card2.price}</h3>
-                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
+                      <h2 className="food-card__title">{appetizer.title}</h2>
+                      <h3 className="food-card__price">N{appetizer.price}</h3>
+                      <Link to="/order" className="food-card__button">
+                        <button>View Product</button>
+                      </Link>
                     </div>
                   </div>
                 );
-
               })}
           </div>
         </section>
@@ -106,17 +109,21 @@ function Menu() {
                 }
               })
 
-              .map((card3) => {
+              .map((veganDessert) => {
                 return (
-                  <div key={card3.id} className="food-card">
-                    <div className="food-card__image">
-                      <img src={card3.image} alt="Delicious Delicacy" />
-                    </div>
+                  <div key={veganDessert.id} className="food-card">
+                    <Link  to={`/vegan-dessert-order/${veganDessert._id}`} className="food-card__image" title="View Product">
+                      <img src={veganDessert.image} alt="Delicious Delicacy" />
+                    </Link>
 
                     <div className="food-card__content">
-                      <h2 className="food-card__title">{card3.title}</h2>
-                      <h3 className="food-card__price">{card3.price}</h3>
-                      <Link to="/order" className="food-card__button"><button>View Product</button></Link>
+                      <h2 className="food-card__title">{veganDessert.title}</h2>
+                      <h3 className="food-card__price">
+                        N{veganDessert.price}
+                      </h3>
+                      <Link to="/order" className="food-card__button">
+                        <button>View Product</button>
+                      </Link>
                     </div>
                   </div>
                 );

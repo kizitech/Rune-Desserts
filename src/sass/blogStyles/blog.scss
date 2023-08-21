@@ -233,6 +233,10 @@
             flex-direction: column !important;
         }
     }
+
+    .blog__posts-container {
+        margin: 0 $p-sm;
+    }
 }
 
 @media (min-width: 40em) {
@@ -270,7 +274,7 @@
     }
 
     .blog__posts-container {
-        padding: 0 $p-sm;
+        margin: 0 $p-sm;
         align-items: flex-start;
         grid-template-columns: 1fr 1fr 1fr;
     }
