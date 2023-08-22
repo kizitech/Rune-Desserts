@@ -1,349 +1,342 @@
-@import '/src/sass/configStyles/config';
+@import "/src/sass/configStyles/config";
 
 .blog {
-    padding: $p-sm 0;
-    background-color: $white;
-    @include flex(center, center, center, column);
+  padding: $p-sm 0;
+  background-color: $white;
+  @include flex(center, center, center, column);
 
-    .blog__image {
-        width: 100%;
-        padding: $p-xl $p-lg;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('src/assets/images/blog/Rectangle 23 (1).png');
+  .blog__image {
+    width: 100%;
+    padding: $p-xl $p-lg;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/images/blog/Rectangle 23 (1).png");
 
-        .blog__top-tips {
-            @include flex (unset, center, center, column);
+    .blog__top-tips {
+      @include flex(unset, center, center, column);
 
-            &-content {
-                gap: 1.5rem;
-                padding: $p-lg;
-                background-color: $white;
-                @include flex(unset, center, center, column);
-
-                &-details {
-                    gap: 1em;
-                    @include flex(unset, center, center, column);
-
-                    &-heading {
-                        color: $black;
-                        font-weight: 600;
-                        font-family: $dms;
-                        font-style: normal;
-                        line-height: normal;
-                        font-size: calc($h3 - 0.5rem);
-                    }
-
-                    &-description {
-                        font-size: $h4;
-                        font-weight: 400;
-                        font-family: $dms;
-                        color: $lightdark;
-                        font-style: normal;
-                        line-height: normal;
-                    }
-                }
-
-                &-author {
-                    width: 100%;
-                    @include flex(unset, center, space-between, row);
-
-                    &-image img {
-                        width: 3.75em;
-                        height: 3.75em;
-                    }
-
-                    &-info {
-                        gap: 0.2em;
-                        @include flex(unset, center, center, column);
-
-                        &-name {
-                            color: $black;
-                            font-weight: 700;
-                            font-family: $dms;
-                            font-style: normal;
-                            line-height: normal;
-                            font-size: calc($h4 + 0.145rem);
-                        }
-
-                        &-date {
-                            color: $black;
-                            font-size: $h4;
-                            font-weight: 400;
-                            font-family: $dms;
-                            font-style: normal;
-                            line-height: normal;
-                        }
-                    }
-                }
-
-                &-buttons {
-                    gap: 0.5em;
-                    @include flex(unset, center, space-between, row);
-
-                    &-like,
-                    &-save {
-                        border: none;
-                        width: 3.1em;
-                        height: 3.1em;
-                        cursor: pointer;
-                        background: none;
-                        background-repeat: no-repeat;
-                        background-image: url('src/assets/icons/ellipse.svg');
-
-                        @include flex(unset, center, center, unset);
-
-                    }
-                }
-            }
-        }
-    }
-
-    .blog__newsletter {
-        width: 90%;
-        margin: $p-md $p-sm;
-        background-color: $green;
-
-        &-content {
-            width: 94%;
-            padding: $p-sm;
-            background-color: $green;
-            @include flex(unset, center, space-between, row);
-
-            &-title {
-                color: $white;
-                font-weight: 500;
-                font-family: $dms;
-                font-style: normal;
-                line-height: normal;
-                font-size: calc($h3 - 0.7rem);
-            }
-
-            &-subcribe {
-                @include flex(unset, center, space-between, row);
-
-                input {
-                    border: none;
-                    color: $dark;
-                    outline: none;
-                    padding: $p-sm;
-
-                    &::placeholder {
-                        color: $green;
-                        font-weight: 500;
-                        font-family: $dms;
-                        font-style: normal;
-                        line-height: normal;
-                    }
-                }
-
-                button {
-                    border: none;
-                    color: $white;
-                    font-size: $h4;
-                    cursor: pointer;
-                    background-color: $dark;
-                    padding: calc($p-sm + 0.245em);
-                }
-            }
-
-        }
-    }
-
-    .blog__posts-container {
-        gap: 3em;
-        display: grid;
-        place-items: center;
-
-        .blog__posts {
-            padding: $p-md;
-            @include flex(unset, center, center, column);
-        }
-
-        .blog__post {
-            width: 100%;
-            @include flex(unset, center, center, column);
-        }
-    }
-
-
-    .blog__post-details {
-        padding: 1em 0;
+      &-content {
+        gap: 1.5rem;
+        padding: $p-lg;
+        background-color: $white;
         @include flex(unset, center, center, column);
 
-        &-date {
-            color: $black;
-            font-size: $h4;
-            font-weight: 500;
-            font-family: $dms;
-            font-style: normal;
-            line-height: normal;
-        }
+        &-details {
+          gap: 1em;
+          @include flex(unset, center, center, column);
 
-        &-title {
+          &-heading {
             color: $black;
-            padding: 0.3em 0r;
-            font-weight: 700;
+            font-weight: 600;
             font-family: $dms;
             font-style: normal;
             line-height: normal;
             font-size: calc($h3 - 0.5rem);
+          }
+
+          &-description {
+            font-size: $h4;
+            font-weight: 400;
+            font-family: $dms;
+            color: $lightdark;
+            font-style: normal;
+            line-height: normal;
+          }
         }
 
-        &-description {
-            width: 80%;
-            color: $black;
+        &-author {
+          width: 100%;
+          @include flex(unset, center, space-between, row);
+
+          &-image img {
+            width: 3.75em;
+            height: 3.75em;
+          }
+
+          &-info {
+            gap: 0.2em;
+            @include flex(unset, center, center, column);
+
+            &-name {
+              color: $black;
+              font-weight: 700;
+              font-family: $dms;
+              font-style: normal;
+              line-height: normal;
+              font-size: calc($h4 + 0.145rem);
+            }
+
+            &-date {
+              color: $black;
+              font-size: $h4;
+              font-weight: 400;
+              font-family: $dms;
+              font-style: normal;
+              line-height: normal;
+            }
+          }
+        }
+
+        &-buttons {
+          gap: 0.5em;
+          @include flex(unset, center, space-between, row);
+
+          &-like,
+          &-save {
+            border: none;
+            width: 3.1em;
+            height: 3.1em;
+            cursor: pointer;
+            background: none;
+            background-repeat: no-repeat;
+            background-image: url("/src/assets/icons/ellipse.svg");
+
+            @include flex(unset, center, center, unset);
+          }
+        }
+      }
+    }
+  }
+
+  .blog__newsletter {
+    width: 90%;
+    margin: $p-md $p-sm;
+    background-color: $green;
+
+    &-content {
+      width: 94%;
+      padding: $p-sm;
+      background-color: $green;
+      @include flex(unset, center, space-between, row);
+
+      &-title {
+        color: $white;
+        font-weight: 500;
+        font-family: $dms;
+        font-style: normal;
+        line-height: normal;
+        font-size: calc($h3 - 0.7rem);
+      }
+
+      &-subcribe {
+        @include flex(unset, center, space-between, row);
+
+        input {
+          border: none;
+          color: $dark;
+          outline: none;
+          padding: $p-sm;
+
+          &::placeholder {
+            color: $green;
             font-weight: 500;
             font-family: $dms;
             font-style: normal;
             line-height: normal;
-            font-size: calc($h4 + 0.125rem);
+          }
         }
 
-        &-read-more {
-            width: 100%;
-            margin: $p-sm 0;
-            @include flex(unset, center, center, row);
-
-            button {
-                @include button;
-                @include flex(unset, center, center, row);
-
-                gap: 1em;
-                font-weight: 500;
-                padding: 0.7em $p-sm;
-                text-transform: capitalize;
-
-                &:hover img {
-                    @include transition;
-                    padding-left: 1.7em;
-                }
-            }
+        button {
+          border: none;
+          color: $white;
+          font-size: $h4;
+          cursor: pointer;
+          background-color: $dark;
+          padding: calc($p-sm + 0.245em);
         }
+      }
     }
+  }
+
+  .blog__posts-container {
+    gap: 3em;
+    display: grid;
+    place-items: center;
+
+    .blog__posts {
+      padding: $p-md;
+      @include flex(unset, center, center, column);
+    }
+
+    .blog__post {
+      width: 100%;
+      @include flex(unset, center, center, column);
+    }
+  }
+
+  .blog__post-details {
+    padding: 1em 0;
+    @include flex(unset, center, center, column);
+
+    &-date {
+      color: $black;
+      font-size: $h4;
+      font-weight: 500;
+      font-family: $dms;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    &-title {
+      color: $black;
+      padding: 0.3em 0r;
+      font-weight: 700;
+      font-family: $dms;
+      font-style: normal;
+      line-height: normal;
+      font-size: calc($h3 - 0.5rem);
+    }
+
+    &-description {
+      width: 80%;
+      color: $black;
+      font-weight: 500;
+      font-family: $dms;
+      font-style: normal;
+      line-height: normal;
+      font-size: calc($h4 + 0.125rem);
+    }
+
+    &-read-more {
+      width: 100%;
+      margin: $p-sm 0;
+      @include flex(unset, center, center, row);
+
+      button {
+        @include button;
+        @include flex(unset, center, center, row);
+
+        gap: 1em;
+        font-weight: 500;
+        padding: 0.7em $p-sm;
+        text-transform: capitalize;
+
+        &:hover img {
+          @include transition;
+          padding-left: 1.7em;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 38em) {
-    .blog__newsletter {
-        @include flex (unset, center, center, column);
+  .blog__newsletter {
+    @include flex(unset, center, center, column);
 
-        &-content {
-            gap: 1.5em;
-            flex-direction: column !important;
-        }
+    &-content {
+      gap: 1.5em;
+      flex-direction: column !important;
     }
+  }
 
-    .blog__posts-container {
-        margin: 0 $p-sm;
-    }
+  .blog__posts-container {
+    margin: 0 $p-sm;
+  }
 }
 
 @media (min-width: 40em) {
-    .blog__top-tips {
-        @include flex (unset, center, center, column);
+  .blog__top-tips {
+    @include flex(unset, center, center, column);
 
-        &-content {
-            width: 38em;
-            padding: $p-md !important;
-        }
+    &-content {
+      width: 38em;
+      padding: $p-md !important;
     }
+  }
 
-    .blog__posts-container {
-        padding: $p-md;
-        grid-template-columns: 1fr 1fr;
+  .blog__posts-container {
+    padding: $p-md;
+    grid-template-columns: 1fr 1fr;
 
-        .blog__post:nth-child(3) {
-            grid-area: 1/2/3;
-        }
+    .blog__post:nth-child(3) {
+      grid-area: 1/2/3;
     }
+  }
 
-    .blog__post-details-description {
-        width: 100% !important;
-    }
+  .blog__post-details-description {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 60em) {
-    .blog__top-tips {
-        @include flex (unset, center, center, column);
+  .blog__top-tips {
+    @include flex(unset, center, center, column);
 
-        &-content {
-            width: 33em !important;
-            padding: 5% !important;
+    &-content {
+      width: 33em !important;
+      padding: 5% !important;
+    }
+  }
+
+  .blog__posts-container {
+    margin: 0 $p-sm;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .blog__post-details-description {
+    color: $lightdark;
+    font-size: calc($h4 - 0.15rem) !important;
+  }
+
+  .blog__newsletter {
+    margin: $p-sm 0 $p-lg !important;
+
+    .blog__newsletter-content {
+      padding: 2%;
+
+      &-subcribe {
+        input {
+          padding: $p-md !important;
+
+          &::placeholder {
+            font-size: $h4;
+          }
         }
-    }
 
-    .blog__posts-container {
-        margin: 0 $p-sm;
-        align-items: flex-start;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .blog__post-details-description {
-        color: $lightdark;
-        font-size: calc($h4 - 0.15rem) !important;
-    }
-
-    .blog__newsletter {
-        margin: $p-sm 0 $p-lg !important;
-
-        .blog__newsletter-content {
-            padding: 2%;
-
-            &-subcribe {
-
-                input {
-                    padding: $p-md !important;
-
-                    &::placeholder {
-                        font-size: $h4;
-                    }
-                }
-
-                button {
-                    padding: calc($p-md + 0.3em) !important;
-                    font-size: calc($h4 - 0.18rem) !important;
-                }
-            }
-
+        button {
+          padding: calc($p-md + 0.3em) !important;
+          font-size: calc($h4 - 0.18rem) !important;
         }
+      }
     }
+  }
 }
 
 @media (min-width: 75em) {
-    .blog__top-tips {
-        align-items: flex-start !important;
+  .blog__top-tips {
+    align-items: flex-start !important;
 
-        &-content {
-            width: 30em !important;
-            padding: $p-sm !important;
-        }
+    &-content {
+      width: 30em !important;
+      padding: $p-sm !important;
+    }
+  }
+
+  .blog__posts-container {
+    .blog__post:nth-child(3) {
+      grid-area: 1/3/3;
+      margin-top: -3em;
     }
 
-    .blog__posts-container {
+    .blog__post-details {
+      align-items: flex-start;
+      text-align: left !important;
 
-        .blog__post:nth-child(3) {
-            grid-area: 1/3/3;
-            margin-top: -3em;
-        }
+      &-date {
+        font-size: calc($h4 - 0.3rem);
+      }
 
-        .blog__post-details {
-            align-items: flex-start;
-            text-align: left !important;
+      &-title {
+        padding: 0.5em 0;
+        font-size: calc($h3 - 0.8rem);
+      }
 
-            &-date {
-                font-size: calc($h4 - 0.3rem);
-            }
-
-            &-title {
-                padding: 0.5em 0;
-                font-size: calc($h3 - 0.8rem);
-            }
-
-            &-read-more {
-                justify-content: flex-start;
-            }
-        }
-
+      &-read-more {
+        justify-content: flex-start;
+      }
     }
+  }
 }

@@ -1,58 +1,57 @@
-@import '/src/sass/configStyles/config';
+@import "/src/sass/configStyles/config";
 
 .contact {
-    padding: 0;
-    position: relative;
-    background-color: $white;
+  padding: 0;
+  position: relative;
+  background-color: $white;
+  @include flex(left, center, center, column);
+
+  &-bg {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/images/contact/image 6 (4).png");
+  }
+
+  &-form {
+    gap: 1.5em;
+    z-index: 10;
+    position: absolute;
     @include flex(left, center, center, column);
-
-    &-bg {
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('src/assets/images/contact/image 6 (4).png');
-    }
-
-    &-form {
-        gap: 1.5em;
-        z-index: 10;
-        position: absolute;
-        @include flex(left, center, center, column);
-
-        .contact__btn,
-        .contact__input,
-        .contact__textarea {
-            width: 100%;
-            border: none;
-            resize: none;
-            outline: none;
-            padding: $p-sm;
-            max-width: 40em;
-            color: #ebe7e7;
-            background: rgba(143, 143, 143, 0.42);
-
-            &::placeholder {
-                color: #ebe7e7;
-            }
-
-            &:focus {
-                border: 1px solid $green;
-            }
-        }
-
-        .contact__btn {
-            @include button
-        }
-    }
-}
-
-@media (max-width: 30em) {
 
     .contact__btn,
     .contact__input,
     .contact__textarea {
-        width: 80% !important;
+      width: 100%;
+      border: none;
+      resize: none;
+      outline: none;
+      padding: $p-sm;
+      max-width: 40em;
+      color: #ebe7e7;
+      background: rgba(143, 143, 143, 0.42);
+
+      &::placeholder {
+        color: #ebe7e7;
+      }
+
+      &:focus {
+        border: 1px solid $green;
+      }
     }
+
+    .contact__btn {
+      @include button;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  .contact__btn,
+  .contact__input,
+  .contact__textarea {
+    width: 80% !important;
+  }
 }
