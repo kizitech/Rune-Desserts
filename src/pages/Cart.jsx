@@ -125,7 +125,7 @@ function Cart() {
         </div>
 
         <div className="cart__summary-checkout">
-          <Link to="/delivery" className="cart__summary-checkout-link">
+          <Link to="/menu/delivery" className="cart__summary-checkout-link">
             <p>Check Out</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

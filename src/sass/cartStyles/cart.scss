@@ -9,6 +9,7 @@
   &-empty {
     gap: 3.5em;
     height: 100vh;
+    background: $white;
     @include flex(center, center, center, column);
 
     h2 {
@@ -57,7 +58,9 @@
 
   &__item {
     max-width: 70em;
-    margin: 0 0 $p-xl;
+    margin: 0 0 5em;
+    padding: $p-sm;
+    border: 1px solid #ccc;
     @include flex(center, center, space-between, column);
 
     &-details {
@@ -211,6 +214,10 @@
 
     &__item-details-rating {
       top: -1.5em;
+    }
+
+    &__item-details-remove {
+      bottom: -1.2em;
     }
 
     &__summary-subtotal > div {

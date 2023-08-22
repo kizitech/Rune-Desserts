@@ -3,11 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import { DataContext } from "/src/components/DataProvider";
 
 function OrderMenu() {
-
   const { id } = useParams();
   const value = useContext(DataContext);
   const [orderDesserts, setOrderDesserts] = value.orderDesserts;
-  
+
   return (
     <div>
       <section className="food-cards">
@@ -16,7 +15,7 @@ function OrderMenu() {
             return (
               <div key={i} className="food-card">
                 <Link
-                  to={`/order-dessert/${orderDessert._id}`}
+                  to={`/menu/order-dessert/${orderDessert._id}`}
                   className="food-card__image-card"
                   title="View Product"
                 >
@@ -32,7 +31,7 @@ function OrderMenu() {
                   <h3 className="food-card__price">N{orderDessert.price}</h3>
                   <Link
                     className="food-card__button"
-                    to={`/order-dessert/${orderDessert._id}`}
+                    to={`/menu/order-dessert/${orderDessert._id}`}
                   >
                     View Product
                   </Link>

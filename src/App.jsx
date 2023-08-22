@@ -24,17 +24,17 @@ function App() {
             <Route path="/menu/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/delivery" element={<Delivery />} />
-            <Route path="/payment-method" element={<PaymentMethod />} />
-            <Route path="/order-dessert/:id" element={<OrderDessert />} />
-            <Route path="/appetizer-order/:id" element={<AppetizerOrder />} />
-            <Route path="/payment-successful" element={<PaymentSuccessful />} />
+            <Route path="/menu/delivery" element={<Delivery />} />
+            <Route path="/menu/payment-method" element={<PaymentMethod />} />
+            <Route path="/menu/order-dessert/:id" element={<OrderDessert />} />
+            <Route path="/menu/appetizer-order/:id" element={<AppetizerOrder />} />
+            <Route path="/menu/payment-successful" element={<PaymentSuccessful />} />
             <Route
-              path="/vegan-dessert-order/:id"
+              path="/menu/vegan-dessert-order/:id"
               element={<VeganDessertOrder />}
             />
             <Route
-              path="/special-dessert-order/:id"
+              path="/menu/special-dessert-order/:id"
               element={<SpecialDessertOrder />}
             />
           </Routes>

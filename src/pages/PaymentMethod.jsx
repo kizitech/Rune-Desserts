@@ -1,30 +1,71 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function PaymentMethod() {
   return (
     <main className="payment">
       <div>
-      <div className="payment__header">
-        <h1 className="payment__header-text">Payment Method</h1>
-      </div>
-      <section className="payment__section">
-        <div className="payment__option">
-          <span className="payment__option-name">Bank Transfer</span>
+        <div className="payment__header">
+          <h1 className="payment__header-text">Payment Method</h1>
         </div>
-        <div className="payment__option">
-          <span className="payment__option-name active">Credit/Debit card</span>
-        </div>
-      </section>
+        <section className="payment__section">
+          <div className="payment__option">
+            <span className="payment__option-name">Bank Transfer</span>
+          </div>
+          <div className="payment__option">
+            <span className="payment__option-name active">
+              Credit/Debit card
+            </span>
+          </div>
+        </section>
 
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <p className="heading_8264">MASTERCARD</p>
-            <svg className="logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
-              <path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"></path><path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"></path><path fill="#ff3d00" d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"></path>
-            </svg>
-            <svg version="1.1" className="chip" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" xml: space="preserve">  <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <p className="heading_8264">MASTERCARD</p>
+              <svg
+                className="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="36"
+                height="36"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#ff9800"
+                  d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+                ></path>
+                <path
+                  fill="#d50000"
+                  d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+                ></path>
+                <path
+                  fill="#ff3d00"
+                  d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+                ></path>
+              </svg>
+              <svg
+                version="1.1"
+                className="chip"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="30px"
+                height="30px"
+                viewBox="0 0 50 50"
+                xml:space="preserve"
+              >
+                {" "}
+                <image
+                  id="image0"
+                  width="50"
+                  height="50"
+                  x="0"
+                  y="0"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
               AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOY
               fEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSW
               ekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GS
@@ -49,9 +90,30 @@ function PaymentMethod() {
               S24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpj
               cmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIw
               MjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAy
-              LTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="></image>
-            </svg>
-            <svg version="1.1" className="contactless" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50" xml: space="preserve">  <image id="image0" width="50" height="50" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+              LTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="
+                ></image>
+              </svg>
+              <svg
+                version="1.1"
+                className="contactless"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="20px"
+                height="20px"
+                viewBox="0 0 50 50"
+                xml:space="preserve"
+              >
+                {" "}
+                <image
+                  id="image0"
+                  width="50"
+                  height="50"
+                  x="0"
+                  y="0"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
               AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
               cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IEzgIwaKTAAADDklEQVRYw+1XS0iUURQ+f5qPyjQf
               lGRFEEFK76koKGxRbWyVVLSOgsCgwjZBJJYuKogSIoOonUK4q3U0WVBWFPZYiIE6kuArG3VGzK/F
@@ -70,54 +132,92 @@ function PaymentMethod() {
               xDyxm9MmISKCWrzB7bSlaqGlsf0FC0gMjzTg6GgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDIt
               MTNUMDg6MTk6NTYrMDA6MDCjlq7LAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTEzVDA4OjE5
               OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw
-              MDowMIXeN6gAAAAASUVORK5CYII="></image>
-            </svg>
-            <p className="number">3000 2998 0000 5252</p>
-            <p className="valid_thru">VALID THRU</p>
-            <p className="date_8264">1 2 / 2 4</p>
-            <p className="name">OHANI KIZITO</p>
-          </div>
-          <div className="flip-card-back">
-            <div className="strip"></div>
-            <div className="mstrip"></div>
-            <div className="sstrip">
-              <p className="code">***</p>
+              MDowMIXeN6gAAAAASUVORK5CYII="
+                ></image>
+              </svg>
+              <p className="number">3000 2998 0000 5252</p>
+              <p className="valid_thru">VALID THRU</p>
+              <p className="date_8264">1 2 / 2 4</p>
+              <p className="name">OHANI KIZITO</p>
+            </div>
+            <div className="flip-card-back">
+              <div className="strip"></div>
+              <div className="mstrip"></div>
+              <div className="sstrip">
+                <p className="code">***</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section className="payment__logos">
-        <div className="payment__logo">
-          <img src="src/assets/images/payment/mastercard.png" alt="mastercard" />
-        </div>
-        <div className="payment__logo">
-          <img src="src/assets/images/payment/visa.png" alt="visa" />
-        </div>
-        <div className="payment__logo">
-          <img src="src/assets/images/payment/verve.png" alt="verve" />
-        </div>
-      </section>
-      <form action="" method="post">
-        <section className="payment__form">
-          <input type="number" name="paymentAmount" placeholder="Payment amount" className="payment__input" />
-          <input type="text" name="cardName" placeholder="Name on card" className="payment__input" />
-          <input type="number" name="cardNumber" placeholder="Card number" className="payment__input" />
-          <input type="number" name="expiryDate" placeholder="Expiry date (MM/YY)" className="payment__input" />
-          <input type="number" name="CVV" placeholder="CVV" className="payment__input" />
+        <section className="payment__logos">
+          <div className="payment__logo">
+            <img
+              src="/src/assets/images/payment/mastercard.png"
+              alt="mastercard"
+            />
+          </div>
+          <div className="payment__logo">
+            <img src="/src/assets/images/payment/visa.png" alt="visa" />
+          </div>
+          <div className="payment__logo">
+            <img src="/src/assets/images/payment/verve.png" alt="verve" />
+          </div>
         </section>
-        <Link to="/payment-successful" className="button">
-          <button className="button" type="submit">
-            <span className="button__text">Confirm Payment</span>
-            <span className="button__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1E9658" d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
-            </span>
-          </button>
-        </Link>
-      </form>
+        <form action="" method="post">
+          <section className="payment__form">
+            <input
+              type="number"
+              name="paymentAmount"
+              placeholder="Payment amount"
+              className="payment__input"
+            />
+            <input
+              type="text"
+              name="cardName"
+              placeholder="Name on card"
+              className="payment__input"
+            />
+            <input
+              type="number"
+              name="cardNumber"
+              placeholder="Card number"
+              className="payment__input"
+            />
+            <input
+              type="number"
+              name="expiryDate"
+              placeholder="Expiry date (MM/YY)"
+              className="payment__input"
+            />
+            <input
+              type="number"
+              name="CVV"
+              placeholder="CVV"
+              className="payment__input"
+            />
+          </section>
+          <Link to="/menu/payment-successful" className="button">
+            <button className="button" type="submit">
+              <span className="button__text">Confirm Payment</span>
+              <span className="button__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#1E9658"
+                    d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+          </Link>
+        </form>
       </div>
     </main>
-
-  )
+  );
 }
 
-export default PaymentMethod
+export default PaymentMethod;
