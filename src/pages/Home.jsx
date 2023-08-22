@@ -1,24 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { ourProduct, specialDessert, popularCategories } from '../components/items/home'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ourProduct,
+  specialDessert,
+  popularCategories,
+} from "../components/items/home";
 
 function Home() {
   return (
     <>
       <main className="main" id="main">
-        <div className='hero-wrapper'>
-          <section className='hero'>
+        <div className="hero-wrapper">
+          <section className="hero">
             <div className="hero__image"></div>
-            <div className='hero__text-content'>
-              <h1 className='hero__text-content-heading'>Indulge In The Delicacies Of African Desserts</h1>
-              <p className='hero__text-content-description'>Sweeten Your Life With Our African Delicacies</p>
-              <Link to="/menu" className='hero__text-content-btn'><button type="submit">Order Now</button></Link>
+            <div className="hero__text-content">
+              <h1 className="hero__text-content-heading">
+                Indulge In The Delicacies Of African Desserts
+              </h1>
+              <p className="hero__text-content-description">
+                Sweeten Your Life With Our African Delicacies
+              </p>
+              <Link to="/menu" className="hero__text-content-btn">
+                <button type="submit">Order Now</button>
+              </Link>
             </div>
           </section>
-          <section className='rune-info'>
-            <p>Rune, Established in 2019 is a family owned, African dessert company. we are known for flavorful, real taste products,
-              that conveys a sense of excitement and let you feel the taste of home.</p>
+          <section className="rune-info">
+            <p>
+              Rune, Established in 2019 is a family owned, African dessert
+              company. we are known for flavorful, real taste products, that
+              conveys a sense of excitement and let you feel the taste of home.
+            </p>
           </section>
 
           <div className="hero-detail">
@@ -30,7 +42,11 @@ function Home() {
                     return (
                       <div key={i} className="product-card">
                         <div className="product-card__image">
-                          <img className="product-card__image" src={card.image} alt="Delicious Delicacy" />
+                          <img
+                            className="product-card__image"
+                            src={card.image}
+                            alt="Delicious Delicacy"
+                          />
                         </div>
 
                         <div className="product-card__content">
@@ -38,7 +54,6 @@ function Home() {
                         </div>
                       </div>
                     );
-
                   })}
                 </div>
               </div>
@@ -50,7 +65,11 @@ function Home() {
                     return (
                       <div key={i} className="product-card">
                         <div className="product-card__image">
-                          <img className="product-card__image" src={card.image} alt="Delicious Delicacy" />
+                          <img
+                            className="product-card__image"
+                            src={card.image}
+                            alt="Delicious Delicacy"
+                          />
                         </div>
 
                         <div className="product-card__content">
@@ -58,7 +77,6 @@ function Home() {
                         </div>
                       </div>
                     );
-
                   })}
                 </div>
               </div>
@@ -70,7 +88,11 @@ function Home() {
                     return (
                       <div key={i} className="product-card">
                         <div className="product-card__image">
-                          <img className="product-card__image" src={card.image} alt="Delicious Delicacy" />
+                          <img
+                            className="product-card__image"
+                            src={card.image}
+                            alt="Delicious Delicacy"
+                          />
                         </div>
 
                         <div className="product-card__content">
@@ -78,7 +100,6 @@ function Home() {
                         </div>
                       </div>
                     );
-
                   })}
                 </div>
               </div>
@@ -86,12 +107,22 @@ function Home() {
 
             <section className="main-content">
               <div className="main-content__text">
-                <h2 className="main-content__text-title">Place an order and get your dessert delivered to your doorstep.</h2>
-                <p className="main-content__text-description">Get in touch with us today and experience dessert done right!</p>
-                <button className='main-content__text-btn' type="submit"><Link to="/menu">Order Now</Link></button>              
+                <h2 className="main-content__text-title">
+                  Place an order and get your dessert delivered to your
+                  doorstep.
+                </h2>
+                <p className="main-content__text-description">
+                  Get in touch with us today and experience dessert done right!
+                </p>
+                <button className="main-content__text-btn" type="submit">
+                  <Link to="/menu">Order Now</Link>
+                </button>
               </div>
               <div className="main-content__image">
-                <img src="src/assets/images/home/Rectangle 23.png" alt="A Lady enjoying herself" />
+                <img
+                  src="/src/assets/images/home/Rectangle 23.png"
+                  alt="A Lady enjoying herself"
+                />
               </div>
             </section>
 
@@ -116,13 +147,11 @@ function Home() {
                 </span>
               </div>
             </section>
-
           </div>
-
         </div>
       </main>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

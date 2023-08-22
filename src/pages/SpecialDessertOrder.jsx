@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import OrderMenu from "src/components/OrderMenu.jsx";
+import OrderMenu from "/src/components/OrderMenu.jsx";
 import { Link, useParams } from "react-router-dom";
 import { DataContext } from "/src/components/DataProvider";
 

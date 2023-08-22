@@ -1,33 +1,33 @@
 import React, { createContext, useState, useEffect } from "react";
 
 // SPECIAL DESSERTS
-import menu1 from "src/assets/images/menu/image1.png";
-import menu2 from "src/assets/images/menu/image2.png";
-import menu3 from "src/assets/images/menu/image3.png";
-import menu4 from "src/assets/images/menu/image4.png";
-import menu5 from "src/assets/images/menu/image5.png";
-import menu6 from "src/assets/images/menu/image6.png";
+import menu1 from "/src/assets/images/menu/image1.png";
+import menu2 from "/src/assets/images/menu/image2.png";
+import menu3 from "/src/assets/images/menu/image3.png";
+import menu4 from "/src/assets/images/menu/image4.png";
+import menu5 from "/src/assets/images/menu/image5.png";
+import menu6 from "/src/assets/images/menu/image6.png";
 
 // APPETIZERS
-import menu7 from "src/assets/images/menu/image7.png";
-import menu8 from "src/assets/images/menu/image8.png";
-import menu9 from "src/assets/images/menu/image9.png";
-import menu10 from "src/assets/images/menu/image10.png";
-import menu11 from "src/assets/images/menu/image11.png";
-import menu12 from "src/assets/images/menu/image12.png";
+import menu7 from "/src/assets/images/menu/image7.png";
+import menu8 from "/src/assets/images/menu/image8.png";
+import menu9 from "/src/assets/images/menu/image9.png";
+import menu10 from "/src/assets/images/menu/image10.png";
+import menu11 from "/src/assets/images/menu/image11.png";
+import menu12 from "/src/assets/images/menu/image12.png";
 
 // VEGAN DESSERTS
-import menu13 from "src/assets/images/menu/image13.png";
-import menu14 from "src/assets/images/menu/image14.png";
-import menu15 from "src/assets/images/menu/image15.png";
-import menu16 from "src/assets/images/menu/image16.png";
-import menu17 from "src/assets/images/menu/image17.png";
-import menu18 from "src/assets/images/menu/image18.png";
+import menu13 from "/src/assets/images/menu/image13.png";
+import menu14 from "/src/assets/images/menu/image14.png";
+import menu15 from "/src/assets/images/menu/image15.png";
+import menu16 from "/src/assets/images/menu/image16.png";
+import menu17 from "/src/assets/images/menu/image17.png";
+import menu18 from "/src/assets/images/menu/image18.png";
 
 // ORDERDessertS
-import menu19 from "src/assets/images/order/image19.png";
-import menu20 from "src/assets/images/order/image20.png";
-import menu21 from "src/assets/images/order/image21.png";
+import menu19 from "/src/assets/images/order/image19.png";
+import menu20 from "/src/assets/images/order/image20.png";
+import menu21 from "/src/assets/images/order/image21.png";
 
 export const DataContext = createContext();
 export default function DataProvider(props) {

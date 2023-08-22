@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { DataContext } from "src/components/DataProvider";
+import { DataContext } from "/src/components/DataProvider";
 import React, { useContext, useState, useEffect } from "react";
 
 function Cart() {

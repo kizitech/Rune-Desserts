@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useContext } from "react";
-import { DataContext } from "src/components/DataProvider";
+import { DataContext } from "/src/components/DataProvider";
 
 function Menu() {
   const value = useContext(DataContext);
@@ -29,7 +29,7 @@ function Menu() {
               }}
             />
             <span className="icon">
-              <img src="src/assets/icons/search.svg" alt="Search icon" />
+              <img src="/src/assets/icons/search.svg" alt="Search icon" />
             </span>
           </div>
         </div>
@@ -170,7 +170,7 @@ function Menu() {
           <button className="menu-cta__btn">
             <p className="menu-cta__word">Delivery</p>
             <p className="menu-image">
-              <img src="src/assets/icons/phone.png" alt="phone icon" />
+              <img src="/src/assets/icons/phone.png" alt="phone icon" />
             </p>
             <p className="menu-cta__word">+234 8 234 9090</p>
           </button>

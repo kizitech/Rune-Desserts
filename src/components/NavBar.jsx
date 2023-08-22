@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { DataContext } from "src/components/DataProvider";
+import { DataContext } from "/src/components/DataProvider";
 import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
