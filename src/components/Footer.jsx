@@ -58,19 +58,19 @@ function Footer() {
           <ul className="footer__list">
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/location.svg" alt="Locotion icon" />
+                <img src="/src/assets/icons/location.svg" alt="Locotion" />
               </a>
               <p>30 Kakawa St, Victoria Island,Lagos, Nigeria.</p>
             </li>
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/phone.svg" alt="Phone icon" />
+                <img src="/src/assets/icons/phone.svg" alt="Phone" />
               </a>
               <p>+234 9 108 6019</p>
             </li>
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/mail.svg" alt="mail icon" />
+                <img src="/src/assets/icons/mail.svg" alt="mail" />
               </a>
               <p>www.runeNg.com</p>
             </li>

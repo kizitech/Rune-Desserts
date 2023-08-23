@@ -1,60 +1,72 @@
+import homeMeal1 from "/src/assets/images/home/Rectangle 4 (1).png";
+import homeMeal2 from "/src/assets/images/home/Rectangle 5.png";
+import homeMeal3 from "/src/assets/images/home/Rectangle 6.png";
+import homeMeal4 from "/src/assets/images/home/Rectangle 7.png";
+import homeMeal5 from "/src/assets/images/home/Rectangle 8.png";
+import homeMeal6 from "/src/assets/images/home/Rectangle 9.png";
+import homeMeal7 from "/src/assets/images/home/Rectangle 11.png";
+import homeMeal8 from "src/assets/images/home/Rectangle 10.png";
+import homeMeal9 from "/src/assets/images/home/Rectangle 20.png";
+import homeMeal10 from "/src/assets/images/home/Rectangle 21.png";
+import homeMeal11 from "/src/assets/images/home/Rectangle 22.png";
+
 const ourProduct = [
   {
-    image: "/src/assets/images/home/Rectangle 4 (1).png",
+    image: homeMeal1,
     title: "Waina",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 5.png",
+    image: homeMeal2,
     title: "Scented Poached Paw-paw",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 6.png",
+    image: homeMeal3,
     title: "Beans & Plantain Waffles",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 7.png",
+    image: homeMeal4,
     title: "Chocolate malva pudding",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 8.png",
+    image: homeMeal5,
     title: "Peanut Butter Cookies",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 9.png",
+    image: homeMeal6,
     title: "Vanilla Pancake",
   },
 ];
 
 const specialDessert = [
   {
-    image: "/src/assets/images/home/Rectangle 11.png",
+    image: homeMeal7,
     title: "Puff Puff",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 10.png",
+    image: homeMeal8,
     title: "Triffle",
   },
 ];
 
 const popularCategories = [
   {
-    image: "/src/assets/images/home/Rectangle 20.png",
+    image: homeMeal9,
     title: "Beju",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 21.png",
+    image: homeMeal10,
     title: "Hot cross buns",
   },
 
   {
-    image: "/src/assets/images/home/Rectangle 22.png",
+    image: homeMeal11,
     title: "Shuku shuku",
   },
 ];
