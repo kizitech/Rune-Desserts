@@ -3,6 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import OrderMenu from "/src/components/OrderMenu.jsx";
 import { DataContext } from "/src/components/DataProvider";
 
+import add from "/src/assets/icons/plus.svg";
+import remove from "/src/assets/icons/minus.svg";
+
 function OrderDessert() {
   const { id } = useParams();
   const value = useContext(DataContext);
@@ -58,7 +61,7 @@ function OrderDessert() {
                   <div className="order__details-quantity-controls-counter">
                     <img
                       onClick={() => increase(orderDessert._id)}
-                      src="/src/assets/icons/plus.svg"
+                      src={add}
                       alt="Add to cart"
                     />
                     <h4 className="order__details-quantity-counter-value">
@@ -66,7 +69,7 @@ function OrderDessert() {
                     </h4>
                     <img
                       onClick={() => decrease(orderDessert._id)}
-                      src="/src/assets/icons/minus.svg"
+                      src={remove}
                       alt="Remove from cart"
                     />
                   </div>

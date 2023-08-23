@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import visa from "/src/assets/images/payment/visa.png";
+import verve from "/src/assets/images/payment/verve.png";
+import mastercard from "/src/assets/images/payment/mastercard.png";
+
 function PaymentMethod() {
   return (
     <main className="payment">
@@ -152,15 +156,15 @@ function PaymentMethod() {
         <section className="payment__logos">
           <div className="payment__logo">
             <img
-              src="/src/assets/images/payment/mastercard.png"
+              src={mastercard}
               alt="mastercard"
             />
           </div>
           <div className="payment__logo">
-            <img src="/src/assets/images/payment/visa.png" alt="visa" />
+            <img src={visa} alt="visa" />
           </div>
           <div className="payment__logo">
-            <img src="/src/assets/images/payment/verve.png" alt="verve" />
+            <img src={verve} alt="verve" />
           </div>
         </section>
         <form action="" method="post">

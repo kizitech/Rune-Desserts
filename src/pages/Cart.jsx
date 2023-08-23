@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { DataContext } from "/src/components/DataProvider";
 import React, { useContext, useState, useEffect } from "react";
 
+import add from "/src/assets/icons/plus.svg";
+import star from "/src/assets/icons/star.svg";
+import remove from "/src/assets/icons/minus.svg";
+
 function Cart() {
   const value = useContext(DataContext);
   const [cart, setCart] = value.cart;
@@ -80,20 +84,20 @@ function Cart() {
               </p>
               <div className="cart__item-details-quantity">
                 <img
-                  onClick={() => increase(meal._id)}
-                  src="/src/assets/icons/plus.svg"
+                  src={add}
                   alt="Add to cart"
+                  onClick={() => increase(meal._id)}
                 />
                 <h4>{meal.count}</h4>
                 <img
-                  onClick={() => decrease(meal._id)}
-                  src="/src/assets/icons/minus.svg"
+                  src={remove}
                   alt="Remove from cart"
+                  onClick={() => decrease(meal._id)}
                 />
               </div>
             </div>
             <div className="cart__item-details-rating">
-              <img src="/src/assets/icons/star.svg" alt="star rating" />
+              <img src={star} alt="star rating" />
               <p>5.0</p>
             </div>
             <button

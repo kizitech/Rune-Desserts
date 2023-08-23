@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-// import { Link } from 'react-router-dom';
+
+import mail from "/src/assets/icons/mail.svg"; 
+import phone from "/src/assets/icons/phone.svg";
+import location from "/src/assets/icons/location.svg";
 
 function Footer() {
   const [click, setClick] = useState(false);
@@ -58,19 +61,19 @@ function Footer() {
           <ul className="footer__list">
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/location.svg" alt="Locotion" />
+                <img src={location} alt="Locotion" />
               </a>
               <p>30 Kakawa St, Victoria Island,Lagos, Nigeria.</p>
             </li>
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/phone.svg" alt="Phone" />
+                <img src={phone} alt="Phone" />
               </a>
               <p>+234 9 108 6019</p>
             </li>
             <li className="footer__item">
               <a href="/" className="footer__link">
-                <img src="/src/assets/icons/mail.svg" alt="mail" />
+                <img src={mail} alt="mail" />
               </a>
               <p>www.runeNg.com</p>
             </li>

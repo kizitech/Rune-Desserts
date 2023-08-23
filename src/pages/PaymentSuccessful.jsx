@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import checkMark from "/src/assets/images/payment/successful.png";
 
 function PaymentSuccessful() {
   return (
@@ -9,7 +10,7 @@ function PaymentSuccessful() {
           <section class="payment-success__section">
             <div class="payment-success__image">
               <img
-                src="/src/assets/images/payment/successful.png"
+                src={checkMark}
                 alt="Payment Successful"
               />
             </div>

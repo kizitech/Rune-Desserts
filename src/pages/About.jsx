@@ -1,4 +1,5 @@
 import React from "react";
+import honey from "/src/assets/images/about/Rectangle 19.png";
 
 function About() {
   return (
@@ -20,7 +21,7 @@ function About() {
         </section>
         <section className="about__image-card">
           <img
-            src="/src/assets/images/about/Rectangle 19.png"
+            src={honey}
             alt="Delicious Delicacy"
           />
         </section>

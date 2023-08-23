@@ -5,6 +5,7 @@ import {
   specialDessert,
   popularCategories,
 } from "../components/items/home";
+import orderNow from "/src/assets/images/home/Rectangle 23.png";
 
 function Home() {
   return (
@@ -120,7 +121,7 @@ function Home() {
               </div>
               <div className="main-content__image">
                 <img
-                  src="/src/assets/images/home/Rectangle 23.png"
+                  src={orderNow}
                   alt="A Lady enjoying herself"
                 />
               </div>

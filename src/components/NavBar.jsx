@@ -1,6 +1,11 @@
+import { Link, NavLink } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { DataContext } from "/src/components/DataProvider";
-import { Link, NavLink } from "react-router-dom";
+
+import logo from "/src/assets/icons/logo.png";
+import cartIcon from "/src/assets/icons/cart.png";
+import openMenu from "/src/assets/icons/open-menu.png";
+import closeMenu from "/src/assets/icons/close-menu.svg";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -15,7 +20,7 @@ function NavBar() {
         <div className="header__logo">
           <Link to="/" className="header__logo-link">
             <img
-              src="/src/assets/icons/logo.png"
+              src={logo}
               alt="rune deserts logo"
               className="header__logo-image"
             />
@@ -59,8 +64,8 @@ function NavBar() {
                 <span>{cart.length}</span>
                 <Link to="/menu/cart">
                   <img
+                    src={cartIcon}
                     alt="view cart"
-                    src="/src/assets/icons/cart.png"
                     className="header__cart-image"
                   />
                 </Link>
@@ -80,7 +85,7 @@ function NavBar() {
               <Link to="/menu/cart">
                 <img
                   alt="view cart"
-                  src="/src/assets/icons/cart.png"
+                  src={cartIcon}
                   className="header__cart-image"
                 />
               </Link>
@@ -91,7 +96,7 @@ function NavBar() {
             <img
               onClick={handleClick}
               className="open-icon"
-              src="/src/assets/icons/open-menu.png"
+              src={openMenu}
               alt="open menu icon"
             />
           </div>
@@ -103,7 +108,7 @@ function NavBar() {
           >
             <div className="menu-icon">
               <img
-                src="/src/assets/icons/close-menu.svg"
+                src={closeMenu}
                 onClick={handleClick}
                 alt="close menu icon"
               />

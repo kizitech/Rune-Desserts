@@ -1,5 +1,9 @@
 import React from "react";
+import save from "/src/assets/icons/save.svg";
 import blogPost from "../components/items/blog";
+import heart from "/src/assets/icons/heart.svg";
+import leftArrow from "/src/assets/icons/left-arrow.svg";
+import ellipse from "/src/assets/images/blog/Ellipse 1 (1).png";
 
 function Blogs() {
   return (
@@ -20,7 +24,7 @@ function Blogs() {
               <div className="blog__top-tips-content-author">
                 <div className="blog__top-tips-content-author-image">
                   <img
-                    src="/src/assets/images/blog/Ellipse 1 (1).png"
+                    src={ellipse}
                     alt="author image"
                   />
                 </div>
@@ -34,10 +38,10 @@ function Blogs() {
                 </div>
                 <div className="blog__top-tips-content-buttons">
                   <button className="blog__top-tips-content-buttons-like">
-                    <img src="/src/assets/icons/heart.svg" alt="like button" />
+                    <img src={heart} alt="like button" />
                   </button>
                   <button className="blog__top-tips-content-buttons-save">
-                    <img src="/src/assets/icons/save.svg" alt="save button" />
+                    <img src={save} alt="save button" />
                   </button>
                 </div>
               </div>
@@ -73,7 +77,7 @@ function Blogs() {
                       <button>
                         <p>Read More</p>
                         <img
-                          src="/src/assets/icons/left-arrow.svg"
+                          src={leftArrow}
                           alt="Read more"
                         />
                       </button>
