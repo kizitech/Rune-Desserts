@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { DataContext } from "/src/components/DataProvider";
 
-import logo from "/src/assets/icons/logo.png";
+import logo from "/src/assets/icons/logo.svg";
 import cartIcon from "/src/assets/icons/cart.png";
 import openMenu from "/src/assets/icons/open-menu.png";
 import closeMenu from "/src/assets/icons/close-menu.svg";
